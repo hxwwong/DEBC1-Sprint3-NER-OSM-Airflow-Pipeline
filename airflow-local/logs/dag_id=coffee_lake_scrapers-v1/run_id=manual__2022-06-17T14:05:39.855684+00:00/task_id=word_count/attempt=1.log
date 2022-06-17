@@ -1,0 +1,24 @@
+[2022-06-17 14:05:52,471] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.word_count manual__2022-06-17T14:05:39.855684+00:00 [queued]>
+[2022-06-17 14:05:52,479] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.word_count manual__2022-06-17T14:05:39.855684+00:00 [queued]>
+[2022-06-17 14:05:52,479] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 14:05:52,479] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 14:05:52,480] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 14:05:52,490] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): word_count> on 2022-06-17 14:05:39.855684+00:00
+[2022-06-17 14:05:52,494] {standard_task_runner.py:52} INFO - Started process 1285 to run task
+[2022-06-17 14:05:52,496] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_scrapers-v1', 'word_count', 'manual__2022-06-17T14:05:39.855684+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/scraper_dag.py', '--cfg-path', '/tmp/tmpwlcxbimf', '--error-file', '/tmp/tmptvl66wvx']
+[2022-06-17 14:05:52,497] {standard_task_runner.py:80} INFO - Job 79: Subtask word_count
+[2022-06-17 14:05:52,535] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_scrapers-v1.word_count manual__2022-06-17T14:05:39.855684+00:00 [running]> on host 32595384c4c5
+[2022-06-17 14:05:52,587] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_scrapers-v1
+AIRFLOW_CTX_TASK_ID=word_count
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T14:05:39.855684+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T14:05:39.855684+00:00
+[2022-06-17 14:05:52,589] {logging_mixin.py:115} INFO - ['inquirer_2022-06-17_01-46-30.csv', 'philstar_2022-06-17_01-48-35.csv', 'philstar_2022-06-17_02-04-26.csv', 'philstar_2022-06-17_02-05-46.csv']
+[2022-06-17 14:05:52,589] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 14:05:52,599] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=coffee_lake_scrapers-v1, task_id=word_count, execution_date=20220617T140539, start_date=20220617T140552, end_date=20220617T140552
+[2022-06-17 14:05:52,628] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 14:05:52,655] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

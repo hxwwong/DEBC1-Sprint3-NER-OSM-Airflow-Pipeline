@@ -1,0 +1,40 @@
+[2022-06-17 12:09:19,365] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.inquirer_feed scheduled__2022-06-16T12:08:54.169905+00:00 [queued]>
+[2022-06-17 12:09:19,378] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.inquirer_feed scheduled__2022-06-16T12:08:54.169905+00:00 [queued]>
+[2022-06-17 12:09:19,378] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 12:09:19,379] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 12:09:19,379] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 12:09:19,393] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): inquirer_feed> on 2022-06-16 12:08:54.169905+00:00
+[2022-06-17 12:09:19,397] {standard_task_runner.py:52} INFO - Started process 3747 to run task
+[2022-06-17 12:09:19,400] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_scrapers-v1', 'inquirer_feed', 'scheduled__2022-06-16T12:08:54.169905+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/scraper_dag.py', '--cfg-path', '/tmp/tmp2e7ynoli', '--error-file', '/tmp/tmpvdvvhpbc']
+[2022-06-17 12:09:19,401] {standard_task_runner.py:80} INFO - Job 20: Subtask inquirer_feed
+[2022-06-17 12:09:19,458] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_scrapers-v1.inquirer_feed scheduled__2022-06-16T12:08:54.169905+00:00 [running]> on host f0a3c4865e95
+[2022-06-17 12:09:19,528] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_scrapers-v1
+AIRFLOW_CTX_TASK_ID=inquirer_feed
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T12:08:54.169905+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T12:08:54.169905+00:00
+[2022-06-17 12:09:20,379] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 179, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scraper_dag.py", line 47, in inquirer_feed
+    upload_formatted_rss_feed("https://www.inquirer.net/fullfeed", "inquirer")
+  File "/opt/airflow/dags/scraper_dag.py", line 30, in upload_formatted_rss_feed
+    upload_string_to_gcs(csv_body=csv_buffer, uploaded_filename=filename)
+  File "/opt/airflow/dags/scraper_dag.py", line 38, in upload_string_to_gcs
+    aws_access_key_id=Variable.get("SERVICE_ACCESS_KEY"),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable SERVICE_ACCESS_KEY does not exist'
+[2022-06-17 12:09:20,390] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=coffee_lake_scrapers-v1, task_id=inquirer_feed, execution_date=20220616T120854, start_date=20220617T120919, end_date=20220617T120920
+[2022-06-17 12:09:20,400] {standard_task_runner.py:97} ERROR - Failed to execute job 20 for task inquirer_feed ('Variable SERVICE_ACCESS_KEY does not exist'; 3747)
+[2022-06-17 12:09:20,418] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 12:09:20,455] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

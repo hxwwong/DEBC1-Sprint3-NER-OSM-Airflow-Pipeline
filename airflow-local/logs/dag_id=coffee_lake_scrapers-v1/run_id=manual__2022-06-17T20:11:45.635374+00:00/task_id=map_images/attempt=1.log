@@ -1,0 +1,52 @@
+[2022-06-17 20:12:23,591] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.map_images manual__2022-06-17T20:11:45.635374+00:00 [queued]>
+[2022-06-17 20:12:23,607] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.map_images manual__2022-06-17T20:11:45.635374+00:00 [queued]>
+[2022-06-17 20:12:23,608] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:12:23,608] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 20:12:23,608] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:12:23,629] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): map_images> on 2022-06-17 20:11:45.635374+00:00
+[2022-06-17 20:12:23,634] {standard_task_runner.py:52} INFO - Started process 1042 to run task
+[2022-06-17 20:12:23,638] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_scrapers-v1', 'map_images', 'manual__2022-06-17T20:11:45.635374+00:00', '--job-id', '338', '--raw', '--subdir', 'DAGS_FOLDER/scraper_dag.py', '--cfg-path', '/tmp/tmp0cui_nlu', '--error-file', '/tmp/tmpsfejpyfe']
+[2022-06-17 20:12:23,639] {standard_task_runner.py:80} INFO - Job 338: Subtask map_images
+[2022-06-17 20:12:23,697] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_scrapers-v1.map_images manual__2022-06-17T20:11:45.635374+00:00 [running]> on host 5a879d076420
+[2022-06-17 20:12:23,786] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_scrapers-v1
+AIRFLOW_CTX_TASK_ID=map_images
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T20:11:45.635374+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T20:11:45.635374+00:00
+[2022-06-17 20:12:23,790] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 179, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scraper_dag.py", line 123, in map_images
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 546, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 539, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 219, in _get_explicit_environ_credentials
+    os.environ[environment_vars.CREDENTIALS], quota_project_id=quota_project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 118, in load_credentials_from_file
+    "File {} was not found.".format(filename)
+google.auth.exceptions.DefaultCredentialsError: File /keys/bigquery.json was not found.
+[2022-06-17 20:12:23,806] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=coffee_lake_scrapers-v1, task_id=map_images, execution_date=20220617T201145, start_date=20220617T201223, end_date=20220617T201223
+[2022-06-17 20:12:23,819] {standard_task_runner.py:97} ERROR - Failed to execute job 338 for task map_images (File /keys/bigquery.json was not found.; 1042)
+[2022-06-17 20:12:23,851] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 20:12:23,896] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

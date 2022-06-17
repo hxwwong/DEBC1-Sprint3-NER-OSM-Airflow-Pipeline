@@ -1,0 +1,36 @@
+[2022-06-17 14:18:25,848] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.philstar_nation manual__2022-06-17T14:18:22.301621+00:00 [queued]>
+[2022-06-17 14:18:25,864] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.philstar_nation manual__2022-06-17T14:18:22.301621+00:00 [queued]>
+[2022-06-17 14:18:25,864] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 14:18:25,865] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 14:18:25,866] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 14:18:25,887] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): philstar_nation> on 2022-06-17 14:18:22.301621+00:00
+[2022-06-17 14:18:25,892] {standard_task_runner.py:52} INFO - Started process 2014 to run task
+[2022-06-17 14:18:25,895] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_scrapers-v1', 'philstar_nation', 'manual__2022-06-17T14:18:22.301621+00:00', '--job-id', '104', '--raw', '--subdir', 'DAGS_FOLDER/scraper_dag.py', '--cfg-path', '/tmp/tmp9e_waxog', '--error-file', '/tmp/tmpxu1sobup']
+[2022-06-17 14:18:25,896] {standard_task_runner.py:80} INFO - Job 104: Subtask philstar_nation
+[2022-06-17 14:18:25,948] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_scrapers-v1.philstar_nation manual__2022-06-17T14:18:22.301621+00:00 [running]> on host 32595384c4c5
+[2022-06-17 14:18:26,029] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_scrapers-v1
+AIRFLOW_CTX_TASK_ID=philstar_nation
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T14:18:22.301621+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T14:18:22.301621+00:00
+[2022-06-17 14:18:29,125] {logging_mixin.py:115} INFO -                                                title  ... guidislink
+0  Militiaman killed, 3 companions hurt in Maguin...  ...      False
+1    Fire hits iconic Metropolitan Theater in Manila  ...      False
+2              2 rebels surrender in Negros Oriental  ...      False
+3                             Quake jolts Ilocos Sur  ...      False
+4               P27 million marijuana plants torched  ...      False
+5             Former press club president found dead  ...      False
+6  AFP: Terrorist designation to limit Abu Sayyaf...  ...      False
+7     Abra mayor, vice mayor surrender more firearms  ...      False
+8           BARMM workers to get P16 daily wage hike  ...      False
+9                        81 new soldiers to join AFP  ...      False
+
+[10 rows x 14 columns]
+[2022-06-17 14:18:30,135] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 14:18:30,152] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=coffee_lake_scrapers-v1, task_id=philstar_nation, execution_date=20220617T141822, start_date=20220617T141825, end_date=20220617T141830
+[2022-06-17 14:18:30,206] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 14:18:30,256] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

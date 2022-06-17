@@ -1,0 +1,23 @@
+[2022-06-17 19:31:26,782] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.philstar_nation manual__2022-06-17T19:31:22.174007+00:00 [queued]>
+[2022-06-17 19:31:26,795] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.philstar_nation manual__2022-06-17T19:31:22.174007+00:00 [queued]>
+[2022-06-17 19:31:26,795] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:31:26,795] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 19:31:26,796] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:31:26,810] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): philstar_nation> on 2022-06-17 19:31:22.174007+00:00
+[2022-06-17 19:31:26,816] {standard_task_runner.py:52} INFO - Started process 2937 to run task
+[2022-06-17 19:31:26,820] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_scrapers-v1', 'philstar_nation', 'manual__2022-06-17T19:31:22.174007+00:00', '--job-id', '302', '--raw', '--subdir', 'DAGS_FOLDER/scraper_dag.py', '--cfg-path', '/tmp/tmpvjyfd1bx', '--error-file', '/tmp/tmpld2_rbyp']
+[2022-06-17 19:31:26,821] {standard_task_runner.py:80} INFO - Job 302: Subtask philstar_nation
+[2022-06-17 19:31:26,887] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_scrapers-v1.philstar_nation manual__2022-06-17T19:31:22.174007+00:00 [running]> on host c0a717b7b476
+[2022-06-17 19:31:26,951] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_scrapers-v1
+AIRFLOW_CTX_TASK_ID=philstar_nation
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T19:31:22.174007+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T19:31:22.174007+00:00
+[2022-06-17 19:31:29,953] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 19:31:29,966] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=coffee_lake_scrapers-v1, task_id=philstar_nation, execution_date=20220617T193122, start_date=20220617T193126, end_date=20220617T193129
+[2022-06-17 19:31:30,005] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 19:31:30,046] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

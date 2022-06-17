@@ -1,0 +1,50 @@
+[2022-06-17 14:13:18,907] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.word_count manual__2022-06-17T14:13:02.661957+00:00 [queued]>
+[2022-06-17 14:13:18,923] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.word_count manual__2022-06-17T14:13:02.661957+00:00 [queued]>
+[2022-06-17 14:13:18,924] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 14:13:18,924] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 14:13:18,924] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 14:13:18,940] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): word_count> on 2022-06-17 14:13:02.661957+00:00
+[2022-06-17 14:13:18,947] {standard_task_runner.py:52} INFO - Started process 1733 to run task
+[2022-06-17 14:13:18,950] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_scrapers-v1', 'word_count', 'manual__2022-06-17T14:13:02.661957+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/scraper_dag.py', '--cfg-path', '/tmp/tmptzy5gzip', '--error-file', '/tmp/tmpikosd5jh']
+[2022-06-17 14:13:18,951] {standard_task_runner.py:80} INFO - Job 96: Subtask word_count
+[2022-06-17 14:13:18,996] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_scrapers-v1.word_count manual__2022-06-17T14:13:02.661957+00:00 [running]> on host 32595384c4c5
+[2022-06-17 14:13:19,053] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_scrapers-v1
+AIRFLOW_CTX_TASK_ID=word_count
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T14:13:02.661957+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T14:13:02.661957+00:00
+[2022-06-17 14:13:19,055] {logging_mixin.py:115} INFO - ['inquirer_2022-06-17_01-46-30.csv', 'philstar_2022-06-17_01-48-35.csv', 'philstar_2022-06-17_02-04-26.csv', 'philstar_2022-06-17_02-05-46.csv', 'philstar_2022-06-17_02-07-05.csv', 'philstar_2022-06-17_02-08-20.csv', 'philstar_2022-06-17_02-13-10.csv']
+[2022-06-17 14:13:19,062] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'summary'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 179, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scraper_dag.py", line 94, in word_count
+    df['sum_word_cnt'] = df['summary'].apply(lambda x: len(x.split()))
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 3458, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 3363, in get_loc
+    raise KeyError(key) from err
+KeyError: 'summary'
+[2022-06-17 14:13:19,072] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=coffee_lake_scrapers-v1, task_id=word_count, execution_date=20220617T141302, start_date=20220617T141318, end_date=20220617T141319
+[2022-06-17 14:13:19,082] {standard_task_runner.py:97} ERROR - Failed to execute job 96 for task word_count ('summary'; 1733)
+[2022-06-17 14:13:19,123] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 14:13:19,156] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

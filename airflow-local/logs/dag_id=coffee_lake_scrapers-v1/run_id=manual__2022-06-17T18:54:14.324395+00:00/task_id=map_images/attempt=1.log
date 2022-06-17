@@ -1,0 +1,24 @@
+[2022-06-17 18:54:46,907] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.map_images manual__2022-06-17T18:54:14.324395+00:00 [queued]>
+[2022-06-17 18:54:46,916] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.map_images manual__2022-06-17T18:54:14.324395+00:00 [queued]>
+[2022-06-17 18:54:46,916] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 18:54:46,917] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 18:54:46,917] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 18:54:46,935] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): map_images> on 2022-06-17 18:54:14.324395+00:00
+[2022-06-17 18:54:46,939] {standard_task_runner.py:52} INFO - Started process 907 to run task
+[2022-06-17 18:54:46,942] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_scrapers-v1', 'map_images', 'manual__2022-06-17T18:54:14.324395+00:00', '--job-id', '264', '--raw', '--subdir', 'DAGS_FOLDER/scraper_dag.py', '--cfg-path', '/tmp/tmpzhrzbpvl', '--error-file', '/tmp/tmplad9jqko']
+[2022-06-17 18:54:46,942] {standard_task_runner.py:80} INFO - Job 264: Subtask map_images
+[2022-06-17 18:54:46,993] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_scrapers-v1.map_images manual__2022-06-17T18:54:14.324395+00:00 [running]> on host c0a717b7b476
+[2022-06-17 18:54:47,062] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_scrapers-v1
+AIRFLOW_CTX_TASK_ID=map_images
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T18:54:14.324395+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T18:54:14.324395+00:00
+[2022-06-17 18:54:48,114] {logging_mixin.py:115} INFO - ['history_changesets', 'history_layers', 'history_nodes', 'history_relations', 'history_ways', 'planet_changesets', 'planet_features', 'planet_features_lines', 'planet_features_multilinestrings', 'planet_features_multipolygons', 'planet_features_other_relations', 'planet_features_points', 'planet_layers', 'planet_nodes', 'planet_relations', 'planet_ways']
+[2022-06-17 18:54:54,929] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 18:54:54,944] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=coffee_lake_scrapers-v1, task_id=map_images, execution_date=20220617T185414, start_date=20220617T185446, end_date=20220617T185454
+[2022-06-17 18:54:54,980] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 18:54:55,001] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

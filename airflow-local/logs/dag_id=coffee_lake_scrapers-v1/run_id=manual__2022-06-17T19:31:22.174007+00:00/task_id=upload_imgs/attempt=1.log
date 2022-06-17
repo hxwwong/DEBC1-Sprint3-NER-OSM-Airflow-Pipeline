@@ -1,0 +1,52 @@
+[2022-06-17 19:31:56,660] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.upload_imgs manual__2022-06-17T19:31:22.174007+00:00 [queued]>
+[2022-06-17 19:31:56,668] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.upload_imgs manual__2022-06-17T19:31:22.174007+00:00 [queued]>
+[2022-06-17 19:31:56,668] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:31:56,668] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 19:31:56,669] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:31:56,680] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): upload_imgs> on 2022-06-17 19:31:22.174007+00:00
+[2022-06-17 19:31:56,685] {standard_task_runner.py:52} INFO - Started process 3006 to run task
+[2022-06-17 19:31:56,689] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_scrapers-v1', 'upload_imgs', 'manual__2022-06-17T19:31:22.174007+00:00', '--job-id', '311', '--raw', '--subdir', 'DAGS_FOLDER/scraper_dag.py', '--cfg-path', '/tmp/tmpo0i09ywz', '--error-file', '/tmp/tmpzjmv293u']
+[2022-06-17 19:31:56,690] {standard_task_runner.py:80} INFO - Job 311: Subtask upload_imgs
+[2022-06-17 19:31:56,734] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_scrapers-v1.upload_imgs manual__2022-06-17T19:31:22.174007+00:00 [running]> on host c0a717b7b476
+[2022-06-17 19:31:56,807] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_scrapers-v1
+AIRFLOW_CTX_TASK_ID=upload_imgs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T19:31:22.174007+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T19:31:22.174007+00:00
+[2022-06-17 19:31:57,368] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 179, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scraper_dag.py", line 169, in upload_imgs
+    upload_img_to_gcs(img=outfile, uploaded_filename=outfile)
+  File "/opt/airflow/dags/scraper_dag.py", line 199, in upload_img_to_gcs
+    bucket = client.get_bucket(BUCKET_NAME)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/client.py", line 770, in get_bucket
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/bucket.py", line 1016, in reload
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/_helpers.py", line 233, in reload
+    _target_object=self,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/client.py", line 356, in _get_resource
+    _target_object=_target_object,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/_http.py", line 80, in api_request
+    return call()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 288, in retry_wrapped_func
+    on_error=on_error,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 190, in retry_target
+    return target()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_http/__init__.py", line 494, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.Forbidden: 403 GET https://storage.googleapis.com/storage/v1/b/news_sites?projection=noAcl&prettyPrint=false: bigquery-osm-test@bigquery-test-project-283805.iam.gserviceaccount.com does not have storage.buckets.get access to the Google Cloud Storage bucket.
+[2022-06-17 19:31:57,386] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=coffee_lake_scrapers-v1, task_id=upload_imgs, execution_date=20220617T193122, start_date=20220617T193156, end_date=20220617T193157
+[2022-06-17 19:31:57,414] {standard_task_runner.py:97} ERROR - Failed to execute job 311 for task upload_imgs (403 GET https://storage.googleapis.com/storage/v1/b/news_sites?projection=noAcl&prettyPrint=false: bigquery-osm-test@bigquery-test-project-283805.iam.gserviceaccount.com does not have storage.buckets.get access to the Google Cloud Storage bucket.; 3006)
+[2022-06-17 19:31:57,464] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 19:31:57,538] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

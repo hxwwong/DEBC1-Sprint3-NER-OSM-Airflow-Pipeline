@@ -1,0 +1,4 @@
+feedparser==6.0.10
+pandas==1.4.2
+boto3==1.24.10
+python-dotenv==0.20.0

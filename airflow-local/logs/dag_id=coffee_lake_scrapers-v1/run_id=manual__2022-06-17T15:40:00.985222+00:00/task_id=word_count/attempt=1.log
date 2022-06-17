@@ -1,0 +1,90 @@
+[2022-06-17 15:40:13,895] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.word_count manual__2022-06-17T15:40:00.985222+00:00 [queued]>
+[2022-06-17 15:40:13,913] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_scrapers-v1.word_count manual__2022-06-17T15:40:00.985222+00:00 [queued]>
+[2022-06-17 15:40:13,915] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 15:40:13,915] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 15:40:13,916] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 15:40:13,939] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): word_count> on 2022-06-17 15:40:00.985222+00:00
+[2022-06-17 15:40:13,945] {standard_task_runner.py:52} INFO - Started process 278 to run task
+[2022-06-17 15:40:13,949] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_scrapers-v1', 'word_count', 'manual__2022-06-17T15:40:00.985222+00:00', '--job-id', '135', '--raw', '--subdir', 'DAGS_FOLDER/scraper_dag.py', '--cfg-path', '/tmp/tmpl_5rz_ov', '--error-file', '/tmp/tmp09rf9tlb']
+[2022-06-17 15:40:13,951] {standard_task_runner.py:80} INFO - Job 135: Subtask word_count
+[2022-06-17 15:40:14,019] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_scrapers-v1.word_count manual__2022-06-17T15:40:00.985222+00:00 [running]> on host 4e64a6770dfb
+[2022-06-17 15:40:14,108] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_scrapers-v1
+AIRFLOW_CTX_TASK_ID=word_count
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T15:40:00.985222+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T15:40:00.985222+00:00
+[2022-06-17 15:40:14,111] {logging_mixin.py:115} INFO - ['philstar_2022-06-17_02-13-10.csv', 'philstar_2022-06-17_02-15-51.csv', 'philstar_2022-06-17_02-18-29.csv', 'philstar_2022-06-17_02-31-18.csv', 'philstar_2022-06-17_03-32-52.csv', 'philstar_2022-06-17_03-40-07.csv']
+[2022-06-17 15:40:14,135] {logging_mixin.py:115} INFO -                                              summary  sum_word_cnt
+0  A member of the Citizens Armed Forces Geograph...            24
+1  The situation was eventually raised to a secon...            21
+2  Two brothers who admitted to be members of the...            23
+3  A magnitude-5.1 earthquake shook parts of Iloc...            13
+4  Marijuana plants with an estimated value of P2...            19
+5  Former National Press Club president Alfredo L...            19
+6  The movement of the Abu Sayyaf bandit group wi...            32
+7  The mayor of Pilar town in Abra and his sister...            30
+8  Workers in the private sector in the Bangsamor...            35
+9  Eighty-one new soldiers will join the Armed Fo...            30
+[2022-06-17 15:40:14,149] {logging_mixin.py:115} INFO -                                              summary  sum_word_cnt
+0  A member of the Citizens Armed Forces Geograph...            24
+1  The situation was eventually raised to a secon...            21
+2  Two brothers who admitted to be members of the...            23
+3  A magnitude-5.1 earthquake shook parts of Iloc...            13
+4  Marijuana plants with an estimated value of P2...            19
+5  Former National Press Club president Alfredo L...            19
+6  The movement of the Abu Sayyaf bandit group wi...            32
+7  The mayor of Pilar town in Abra and his sister...            30
+8  Workers in the private sector in the Bangsamor...            35
+9  Eighty-one new soldiers will join the Armed Fo...            30
+[2022-06-17 15:40:14,165] {logging_mixin.py:115} INFO -                                              summary  sum_word_cnt
+0  A member of the Citizens Armed Forces Geograph...            24
+1  The situation was eventually raised to a secon...            21
+2  Two brothers who admitted to be members of the...            23
+3  A magnitude-5.1 earthquake shook parts of Iloc...            13
+4  Marijuana plants with an estimated value of P2...            19
+5  Former National Press Club president Alfredo L...            19
+6  The movement of the Abu Sayyaf bandit group wi...            32
+7  The mayor of Pilar town in Abra and his sister...            30
+8  Workers in the private sector in the Bangsamor...            35
+9  Eighty-one new soldiers will join the Armed Fo...            30
+[2022-06-17 15:40:14,182] {logging_mixin.py:115} INFO -                                              summary  sum_word_cnt
+0  A member of the Citizens Armed Forces Geograph...            24
+1  The situation was eventually raised to a secon...            21
+2  Two brothers who admitted to be members of the...            23
+3  A magnitude-5.1 earthquake shook parts of Iloc...            13
+4  Marijuana plants with an estimated value of P2...            19
+5  Former National Press Club president Alfredo L...            19
+6  The movement of the Abu Sayyaf bandit group wi...            32
+7  The mayor of Pilar town in Abra and his sister...            30
+8  Workers in the private sector in the Bangsamor...            35
+9  Eighty-one new soldiers will join the Armed Fo...            30
+[2022-06-17 15:40:14,196] {logging_mixin.py:115} INFO -                                              summary  sum_word_cnt
+0  A member of the Citizens Armed Forces Geograph...            24
+1  The situation was eventually raised to a secon...            21
+2  Two brothers who admitted to be members of the...            23
+3  A magnitude-5.1 earthquake shook parts of Iloc...            13
+4  Marijuana plants with an estimated value of P2...            19
+5  Former National Press Club president Alfredo L...            19
+6  The movement of the Abu Sayyaf bandit group wi...            32
+7  The mayor of Pilar town in Abra and his sister...            30
+8  Workers in the private sector in the Bangsamor...            35
+9  Eighty-one new soldiers will join the Armed Fo...            30
+[2022-06-17 15:40:14,219] {logging_mixin.py:115} INFO -                                              summary  sum_word_cnt
+0  A member of the Citizens Armed Forces Geograph...            24
+1  The situation was eventually raised to a secon...            21
+2  Two brothers who admitted to be members of the...            23
+3  A magnitude-5.1 earthquake shook parts of Iloc...            13
+4  Marijuana plants with an estimated value of P2...            19
+5  Former National Press Club president Alfredo L...            19
+6  The movement of the Abu Sayyaf bandit group wi...            32
+7  The mayor of Pilar town in Abra and his sister...            30
+8  Workers in the private sector in the Bangsamor...            35
+9  Eighty-one new soldiers will join the Armed Fo...            30
+[2022-06-17 15:40:14,219] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 15:40:14,237] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=coffee_lake_scrapers-v1, task_id=word_count, execution_date=20220617T154000, start_date=20220617T154013, end_date=20220617T154014
+[2022-06-17 15:40:14,283] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 15:40:14,338] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
