@@ -1,0 +1,38 @@
+[2022-06-18 06:35:41,596] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_demo-v2.spacy_ner manual__2022-06-18T06:35:24.748600+00:00 [queued]>
+[2022-06-18 06:35:41,608] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_demo-v2.spacy_ner manual__2022-06-18T06:35:24.748600+00:00 [queued]>
+[2022-06-18 06:35:41,608] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 06:35:41,608] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-18 06:35:41,609] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 06:35:41,624] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): spacy_ner> on 2022-06-18 06:35:24.748600+00:00
+[2022-06-18 06:35:41,630] {standard_task_runner.py:52} INFO - Started process 1502 to run task
+[2022-06-18 06:35:41,632] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_demo-v2', 'spacy_ner', 'manual__2022-06-18T06:35:24.748600+00:00', '--job-id', '478', '--raw', '--subdir', 'DAGS_FOLDER/scraper_v2_dag.py', '--cfg-path', '/tmp/tmpzxcpnk2s', '--error-file', '/tmp/tmp0q27va6d']
+[2022-06-18 06:35:41,633] {standard_task_runner.py:80} INFO - Job 478: Subtask spacy_ner
+[2022-06-18 06:35:41,678] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_demo-v2.spacy_ner manual__2022-06-18T06:35:24.748600+00:00 [running]> on host edf12686294f
+[2022-06-18 06:35:41,751] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_demo-v2
+AIRFLOW_CTX_TASK_ID=spacy_ner
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-18T06:35:24.748600+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-18T06:35:24.748600+00:00
+[2022-06-18 06:35:41,759] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 179, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scraper_v2_dag.py", line 139, in spacy_ner
+    nlp = spacy.load("/model/en_core_web_sm/en_core_web_sm-2.2.5")
+  File "/home/airflow/.local/lib/python3.7/site-packages/spacy/__init__.py", line 52, in load
+    name, vocab=vocab, disable=disable, exclude=exclude, config=config
+  File "/home/airflow/.local/lib/python3.7/site-packages/spacy/util.py", line 427, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model '/model/en_core_web_sm/en_core_web_sm-2.2.5'. It doesn't seem to be a Python package or a valid path to a data directory.
+[2022-06-18 06:35:41,769] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=coffee_lake_demo-v2, task_id=spacy_ner, execution_date=20220618T063524, start_date=20220618T063541, end_date=20220618T063541
+[2022-06-18 06:35:41,781] {standard_task_runner.py:97} ERROR - Failed to execute job 478 for task spacy_ner ([E050] Can't find model '/model/en_core_web_sm/en_core_web_sm-2.2.5'. It doesn't seem to be a Python package or a valid path to a data directory.; 1502)
+[2022-06-18 06:35:41,805] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-18 06:35:41,850] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

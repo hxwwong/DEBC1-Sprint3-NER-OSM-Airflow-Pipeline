@@ -1,0 +1,23 @@
+[2022-06-18 06:34:27,909] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_demo-v2.inquirer_feed manual__2022-06-18T06:34:19.000541+00:00 [queued]>
+[2022-06-18 06:34:27,926] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_demo-v2.inquirer_feed manual__2022-06-18T06:34:19.000541+00:00 [queued]>
+[2022-06-18 06:34:27,927] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 06:34:27,927] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-18 06:34:27,928] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 06:34:27,943] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): inquirer_feed> on 2022-06-18 06:34:19.000541+00:00
+[2022-06-18 06:34:27,950] {standard_task_runner.py:52} INFO - Started process 1328 to run task
+[2022-06-18 06:34:27,953] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_demo-v2', 'inquirer_feed', 'manual__2022-06-18T06:34:19.000541+00:00', '--job-id', '459', '--raw', '--subdir', 'DAGS_FOLDER/scraper_v2_dag.py', '--cfg-path', '/tmp/tmp7pefoovk', '--error-file', '/tmp/tmpvk76m5nl']
+[2022-06-18 06:34:27,954] {standard_task_runner.py:80} INFO - Job 459: Subtask inquirer_feed
+[2022-06-18 06:34:28,015] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_demo-v2.inquirer_feed manual__2022-06-18T06:34:19.000541+00:00 [running]> on host edf12686294f
+[2022-06-18 06:34:28,087] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_demo-v2
+AIRFLOW_CTX_TASK_ID=inquirer_feed
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-18T06:34:19.000541+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-18T06:34:19.000541+00:00
+[2022-06-18 06:34:29,190] {python.py:173} INFO - Done. Returned value was: True
+[2022-06-18 06:34:29,214] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=coffee_lake_demo-v2, task_id=inquirer_feed, execution_date=20220618T063419, start_date=20220618T063427, end_date=20220618T063429
+[2022-06-18 06:34:29,250] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 06:34:29,301] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,31 @@
+[2022-06-18 07:33:37,123] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_demo-v2.t1_start_msg manual__2022-06-18T07:33:31.605917+00:00 [queued]>
+[2022-06-18 07:33:37,140] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_demo-v2.t1_start_msg manual__2022-06-18T07:33:31.605917+00:00 [queued]>
+[2022-06-18 07:33:37,141] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 07:33:37,141] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-18 07:33:37,141] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 07:33:37,156] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): t1_start_msg> on 2022-06-18 07:33:31.605917+00:00
+[2022-06-18 07:33:37,161] {standard_task_runner.py:52} INFO - Started process 2945 to run task
+[2022-06-18 07:33:37,164] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_demo-v2', 't1_start_msg', 'manual__2022-06-18T07:33:31.605917+00:00', '--job-id', '625', '--raw', '--subdir', 'DAGS_FOLDER/scraper_v2_dag.py', '--cfg-path', '/tmp/tmpva4s7o63', '--error-file', '/tmp/tmp9gnvq9z5']
+[2022-06-18 07:33:37,165] {standard_task_runner.py:80} INFO - Job 625: Subtask t1_start_msg
+[2022-06-18 07:33:37,224] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_demo-v2.t1_start_msg manual__2022-06-18T07:33:31.605917+00:00 [running]> on host 312614bad459
+[2022-06-18 07:33:37,294] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_demo-v2
+AIRFLOW_CTX_TASK_ID=t1_start_msg
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-18T07:33:31.605917+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-18T07:33:31.605917+00:00
+[2022-06-18 07:33:37,297] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-18 07:33:37,298] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -X POST -H \'Content-type: application/json\' --data \'{"text" : "starting task 1: scraping"}\' "https://discord.com/api/webhooks/986224448984195082/pQp4GNcVWh-J2XtmIycVnjxYuGRGVIYFeveDRS5EwvgmGozthyd_alj8wbeKhfVn9SSk/slack"']
+[2022-06-18 07:33:37,309] {subprocess.py:85} INFO - Output:
+[2022-06-18 07:33:37,315] {subprocess.py:92} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2022-06-18 07:33:37,315] {subprocess.py:92} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2022-06-18 07:33:38,181] {subprocess.py:92} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    40    0     2  100    38      2     43 --:--:-- --:--:-- --:--:--    46
+[2022-06-18 07:33:38,184] {subprocess.py:92} INFO - ok
+[2022-06-18 07:33:38,185] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-18 07:33:38,215] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=coffee_lake_demo-v2, task_id=t1_start_msg, execution_date=20220618T073331, start_date=20220618T073337, end_date=20220618T073338
+[2022-06-18 07:33:38,259] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 07:33:38,306] {local_task_job.py:273} INFO - 3 downstream tasks scheduled from follow-on schedule check

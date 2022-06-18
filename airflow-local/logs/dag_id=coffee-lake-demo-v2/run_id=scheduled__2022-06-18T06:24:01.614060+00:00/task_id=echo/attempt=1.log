@@ -1,0 +1,28 @@
+[2022-06-18 06:39:10,075] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee-lake-demo-v2.echo scheduled__2022-06-18T06:24:01.614060+00:00 [queued]>
+[2022-06-18 06:39:10,090] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee-lake-demo-v2.echo scheduled__2022-06-18T06:24:01.614060+00:00 [queued]>
+[2022-06-18 06:39:10,090] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 06:39:10,090] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-18 06:39:10,091] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 06:39:10,109] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): echo> on 2022-06-18 06:24:01.614060+00:00
+[2022-06-18 06:39:10,113] {standard_task_runner.py:52} INFO - Started process 1682 to run task
+[2022-06-18 06:39:10,116] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee-lake-demo-v2', 'echo', 'scheduled__2022-06-18T06:24:01.614060+00:00', '--job-id', '483', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpmolaa5c3', '--error-file', '/tmp/tmp_sydd5vm']
+[2022-06-18 06:39:10,117] {standard_task_runner.py:80} INFO - Job 483: Subtask echo
+[2022-06-18 06:39:10,169] {task_command.py:370} INFO - Running <TaskInstance: coffee-lake-demo-v2.echo scheduled__2022-06-18T06:24:01.614060+00:00 [running]> on host edf12686294f
+[2022-06-18 06:39:10,255] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee-lake-demo-v2
+AIRFLOW_CTX_TASK_ID=echo
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-18T06:24:01.614060+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-18T06:24:01.614060+00:00
+[2022-06-18 06:39:10,257] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-18 06:39:10,258] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'Finished!'"]
+[2022-06-18 06:39:10,272] {subprocess.py:85} INFO - Output:
+[2022-06-18 06:39:10,274] {subprocess.py:92} INFO - Finished!
+[2022-06-18 06:39:10,275] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-18 06:39:10,316] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=coffee-lake-demo-v2, task_id=echo, execution_date=20220618T062401, start_date=20220618T063910, end_date=20220618T063910
+[2022-06-18 06:39:10,369] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 06:39:10,502] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

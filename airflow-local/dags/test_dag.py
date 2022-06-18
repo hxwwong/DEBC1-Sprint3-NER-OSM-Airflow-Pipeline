@@ -4,8 +4,8 @@ from airflow.operators.bash import BashOperator
 
 
 with DAG(
-    'coffee-lake-demo-v1',
-    description='Example of using bash scripts',
+    'coffee-lake-demo-v2',
+    description="Demo of Fem/Hans's Data Pipeline",
     schedule_interval=timedelta(minutes=15),
     start_date=datetime(2022, 6, 17),
     catchup=False,
@@ -36,7 +36,7 @@ with DAG(
 
     t4 = BashOperator(
         task_id="curl",
-        bash_command="curl -X POST -H 'Content-type: application/json' --data '{\"text\" : \"hello, coffee!\"}' \"https://discord.com/api/webhooks/986224448984195082/pQp4GNcVWh-J2XtmIycVnjxYuGRGVIYFeveDRS5EwvgmGozthyd_alj8wbeKhfVn9SSk/slack\"",
+        bash_command="curl -X POST -H 'Content-type: application/json' --data '{\"text\" : \"presentation time (fem/hans) test!\"}' \"https://discord.com/api/webhooks/986224448984195082/pQp4GNcVWh-J2XtmIycVnjxYuGRGVIYFeveDRS5EwvgmGozthyd_alj8wbeKhfVn9SSk/slack\"",
         dag=dag
     )
 

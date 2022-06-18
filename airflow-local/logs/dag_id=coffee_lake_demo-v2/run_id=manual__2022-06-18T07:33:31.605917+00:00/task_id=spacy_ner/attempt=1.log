@@ -1,0 +1,1444 @@
+[2022-06-18 07:33:50,093] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_demo-v2.spacy_ner manual__2022-06-18T07:33:31.605917+00:00 [queued]>
+[2022-06-18 07:33:50,104] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: coffee_lake_demo-v2.spacy_ner manual__2022-06-18T07:33:31.605917+00:00 [queued]>
+[2022-06-18 07:33:50,104] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 07:33:50,104] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-18 07:33:50,104] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 07:33:50,116] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): spacy_ner> on 2022-06-18 07:33:31.605917+00:00
+[2022-06-18 07:33:50,121] {standard_task_runner.py:52} INFO - Started process 3004 to run task
+[2022-06-18 07:33:50,123] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coffee_lake_demo-v2', 'spacy_ner', 'manual__2022-06-18T07:33:31.605917+00:00', '--job-id', '632', '--raw', '--subdir', 'DAGS_FOLDER/scraper_v2_dag.py', '--cfg-path', '/tmp/tmp07jpteqg', '--error-file', '/tmp/tmp84wfh6jz']
+[2022-06-18 07:33:50,124] {standard_task_runner.py:80} INFO - Job 632: Subtask spacy_ner
+[2022-06-18 07:33:50,165] {task_command.py:370} INFO - Running <TaskInstance: coffee_lake_demo-v2.spacy_ner manual__2022-06-18T07:33:31.605917+00:00 [running]> on host 312614bad459
+[2022-06-18 07:33:50,229] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=coffee_lake_demo-v2
+AIRFLOW_CTX_TASK_ID=spacy_ner
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-18T07:33:31.605917+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-18T07:33:31.605917+00:00
+[2022-06-18 07:33:50,951] {logging_mixin.py:115} INFO - WASHINGTON &# ORG
+[2022-06-18 07:33:50,951] {logging_mixin.py:115} INFO - 8211 DATE
+[2022-06-18 07:33:50,952] {logging_mixin.py:115} INFO - The United States GPE
+[2022-06-18 07:33:50,952] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:50,952] {logging_mixin.py:115} INFO - China &# ORG
+[2022-06-18 07:33:50,952] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:50,952] {logging_mixin.py:115} INFO - the State Department ORG
+[2022-06-18 07:33:50,953] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:50,953] {logging_mixin.py:115} INFO - last week DATE
+[2022-06-18 07:33:50,953] {logging_mixin.py:115} INFO - Chinese NORP
+[2022-06-18 07:33:50,953] {logging_mixin.py:115} INFO - Manila&#8217;s CARDINAL
+[2022-06-18 07:33:50,953] {logging_mixin.py:115} INFO - 200-mile QUANTITY
+[2022-06-18 07:33:50,953] {logging_mixin.py:115} INFO - 321 km QUANTITY
+[2022-06-18 07:33:50,954] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:50,954] {logging_mixin.py:115} INFO - 8220;illegal MONEY
+[2022-06-18 07:33:50,954] {logging_mixin.py:115} INFO - Chinese NORP
+[2022-06-18 07:33:50,954] {logging_mixin.py:115} INFO - Philippine NORP
+[2022-06-18 07:33:50,954] {logging_mixin.py:115} INFO - more than 300 CARDINAL
+[2022-06-18 07:33:50,955] {logging_mixin.py:115} INFO - South China LOC
+[2022-06-18 07:33:50,955] {logging_mixin.py:115} INFO - The United States GPE
+[2022-06-18 07:33:50,955] {logging_mixin.py:115} INFO - the State Department ORG
+[2022-06-18 07:33:50,955] {logging_mixin.py:115} INFO - PRC GPE
+[2022-06-18 07:33:50,955] {logging_mixin.py:115} INFO - South China Sea LOC
+[2022-06-18 07:33:50,956] {logging_mixin.py:115} INFO - State Department ORG
+[2022-06-18 07:33:50,956] {logging_mixin.py:115} INFO - Ned Price PERSON
+[2022-06-18 07:33:50,956] {logging_mixin.py:115} INFO - 8211 DATE
+[2022-06-18 07:33:50,998] {logging_mixin.py:115} INFO - Philippine NORP
+[2022-06-18 07:33:50,999] {logging_mixin.py:115} INFO - Ferdinand R. Marcos PERSON
+[2022-06-18 07:33:50,999] {logging_mixin.py:115} INFO - Jr. PERSON
+[2022-06-18 07:33:50,999] {logging_mixin.py:115} INFO - Bangko Sentral ORG
+[2022-06-18 07:33:50,999] {logging_mixin.py:115} INFO - Bureau of Internal Revenue ORG
+[2022-06-18 07:33:51,000] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:51,000] {logging_mixin.py:115} INFO - Lilia C. Guillermo PERSON
+[2022-06-18 07:33:51,000] {logging_mixin.py:115} INFO - almost four decades DATE
+[2022-06-18 07:33:51,000] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:51,000] {logging_mixin.py:115} INFO - Rose Beatrix & ORG
+[2022-06-18 07:33:51,001] {logging_mixin.py:115} INFO - 8220;Trixie&#8221 MONEY
+[2022-06-18 07:33:51,001] {logging_mixin.py:115} INFO - Cruz-Angeles ORG
+[2022-06-18 07:33:51,001] {logging_mixin.py:115} INFO - Guillermo PERSON
+[2022-06-18 07:33:51,001] {logging_mixin.py:115} INFO - the BSP Technology ORG
+[2022-06-18 07:33:51,001] {logging_mixin.py:115} INFO - Digital Innovation Office ORG
+[2022-06-18 07:33:51,002] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,002] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:51,002] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:51,002] {logging_mixin.py:115} INFO - Bureau of Customs ORG
+[2022-06-18 07:33:51,002] {logging_mixin.py:115} INFO - Cruz-Angeles PERSON
+[2022-06-18 07:33:51,003] {logging_mixin.py:115} INFO - Romeo Lumagui Jr. PERSON
+[2022-06-18 07:33:51,003] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:51,003] {logging_mixin.py:115} INFO - Cruz-Angeles PERSON
+[2022-06-18 07:33:51,003] {logging_mixin.py:115} INFO - Lumagui PERSON
+[2022-06-18 07:33:51,003] {logging_mixin.py:115} INFO - Revenue Region ORG
+[2022-06-18 07:33:51,004] {logging_mixin.py:115} INFO - 7B CARDINAL
+[2022-06-18 07:33:51,004] {logging_mixin.py:115} INFO - December DATE
+[2022-06-18 07:33:51,004] {logging_mixin.py:115} INFO - Marcos PERSON
+[2022-06-18 07:33:51,004] {logging_mixin.py:115} INFO - more than P200 billion MONEY
+[2022-06-18 07:33:51,005] {logging_mixin.py:115} INFO - />\nThe Marcos PERSON
+[2022-06-18 07:33:51,005] {logging_mixin.py:115} INFO - Marcos PERSON
+[2022-06-18 07:33:51,005] {logging_mixin.py:115} INFO - last month DATE
+[2022-06-18 07:33:51,005] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:51,005] {logging_mixin.py:115} INFO - BoC ORG
+[2022-06-18 07:33:51,006] {logging_mixin.py:115} INFO - Marcos PERSON
+[2022-06-18 07:33:51,006] {logging_mixin.py:115} INFO - Ricardo de Leon ORG
+[2022-06-18 07:33:51,006] {logging_mixin.py:115} INFO - the National Intelligence Agency ORG
+[2022-06-18 07:33:51,006] {logging_mixin.py:115} INFO - de Leon PERSON
+[2022-06-18 07:33:51,006] {logging_mixin.py:115} INFO - the Philippine Public Safety College ORG
+[2022-06-18 07:33:51,007] {logging_mixin.py:115} INFO - 8211 DATE
+[2022-06-18 07:33:51,318] {logging_mixin.py:115} INFO - Pilipinas GPE
+[2022-06-18 07:33:51,318] {logging_mixin.py:115} INFO - this year DATE
+[2022-06-18 07:33:51,318] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:51,319] {logging_mixin.py:115} INFO - 2022 DATE
+[2022-06-18 07:33:51,319] {logging_mixin.py:115} INFO - 2023 DATE
+[2022-06-18 07:33:51,319] {logging_mixin.py:115} INFO - June 16 DATE
+[2022-06-18 07:33:51,319] {logging_mixin.py:115} INFO - 2022 DATE
+[2022-06-18 07:33:51,319] {logging_mixin.py:115} INFO - 2023 DATE
+[2022-06-18 07:33:51,320] {logging_mixin.py:115} INFO - Ukraine GPE
+[2022-06-18 07:33:51,320] {logging_mixin.py:115} INFO - Russia GPE
+[2022-06-18 07:33:51,320] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:51,320] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,321] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:51,321] {logging_mixin.py:115} INFO - $6.3 billion MONEY
+[2022-06-18 07:33:51,321] {logging_mixin.py:115} INFO - this year DATE
+[2022-06-18 07:33:51,321] {logging_mixin.py:115} INFO - $4.3-billion MONEY
+[2022-06-18 07:33:51,321] {logging_mixin.py:115} INFO - -1 ORG
+[2022-06-18 07:33:51,322] {logging_mixin.py:115} INFO - $79-million MONEY
+[2022-06-18 07:33:51,322] {logging_mixin.py:115} INFO - January-April DATE
+[2022-06-18 07:33:51,322] {logging_mixin.py:115} INFO - $231-million MONEY
+[2022-06-18 07:33:51,322] {logging_mixin.py:115} INFO - the same four months DATE
+[2022-06-18 07:33:51,322] {logging_mixin.py:115} INFO - 2021.</p>\n CARDINAL
+[2022-06-18 07:33:51,323] {logging_mixin.py:115} INFO - this year DATE
+[2022-06-18 07:33:51,323] {logging_mixin.py:115} INFO - $19.1 billion MONEY
+[2022-06-18 07:33:51,323] {logging_mixin.py:115} INFO - $16.3 billion MONEY
+[2022-06-18 07:33:51,323] {logging_mixin.py:115} INFO - 18% and 13% PERCENT
+[2022-06-18 07:33:51,324] {logging_mixin.py:115} INFO - 15% and 12% PERCENT
+[2022-06-18 07:33:51,324] {logging_mixin.py:115} INFO - Philippine NORP
+[2022-06-18 07:33:51,324] {logging_mixin.py:115} INFO - 7% and 11% PERCENT
+[2022-06-18 07:33:51,324] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,324] {logging_mixin.py:115} INFO - BPO ORG
+[2022-06-18 07:33:51,325] {logging_mixin.py:115} INFO - 8% PERCENT
+[2022-06-18 07:33:51,325] {logging_mixin.py:115} INFO - 100% PERCENT
+[2022-06-18 07:33:51,325] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,325] {logging_mixin.py:115} INFO - Filipino LANGUAGE
+[2022-06-18 07:33:51,326] {logging_mixin.py:115} INFO - 4% PERCENT
+[2022-06-18 07:33:51,326] {logging_mixin.py:115} INFO - 2.7% PERCENT
+[2022-06-18 07:33:51,326] {logging_mixin.py:115} INFO - $10.167 billion MONEY
+[2022-06-18 07:33:51,326] {logging_mixin.py:115} INFO - the first four months DATE
+[2022-06-18 07:33:51,326] {logging_mixin.py:115} INFO - $4.8 billion MONEY
+[2022-06-18 07:33:51,327] {logging_mixin.py:115} INFO - the first quarter DATE
+[2022-06-18 07:33:51,327] {logging_mixin.py:115} INFO - $32-billion MONEY
+[2022-06-18 07:33:51,327] {logging_mixin.py:115} INFO - year DATE
+[2022-06-18 07:33:51,327] {logging_mixin.py:115} INFO - $11.8 billion MONEY
+[2022-06-18 07:33:51,327] {logging_mixin.py:115} INFO - $10.9 billion MONEY
+[2022-06-18 07:33:51,328] {logging_mixin.py:115} INFO - FDI ORG
+[2022-06-18 07:33:51,328] {logging_mixin.py:115} INFO - the year DATE
+[2022-06-18 07:33:51,328] {logging_mixin.py:115} INFO - $11 billion MONEY
+[2022-06-18 07:33:51,328] {logging_mixin.py:115} INFO - March DATE
+[2022-06-18 07:33:51,328] {logging_mixin.py:115} INFO - $4.5-billion MONEY
+[2022-06-18 07:33:51,329] {logging_mixin.py:115} INFO - $4 billion MONEY
+[2022-06-18 07:33:51,329] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,329] {logging_mixin.py:115} INFO - March DATE
+[2022-06-18 07:33:51,329] {logging_mixin.py:115} INFO - $4.9 billion MONEY
+[2022-06-18 07:33:51,329] {logging_mixin.py:115} INFO - the first quarter of 2022 DATE
+[2022-06-18 07:33:51,330] {logging_mixin.py:115} INFO - $4.1 billion MONEY
+[2022-06-18 07:33:51,330] {logging_mixin.py:115} INFO - the same period last year DATE
+[2022-06-18 07:33:51,330] {logging_mixin.py:115} INFO - FPI ORG
+[2022-06-18 07:33:51,330] {logging_mixin.py:115} INFO - FDI ORG
+[2022-06-18 07:33:51,330] {logging_mixin.py:115} INFO - FDI ORG
+[2022-06-18 07:33:51,331] {logging_mixin.py:115} INFO - 2% PERCENT
+[2022-06-18 07:33:51,331] {logging_mixin.py:115} INFO - $2.43 billion MONEY
+[2022-06-18 07:33:51,331] {logging_mixin.py:115} INFO - the first quarter DATE
+[2022-06-18 07:33:51,331] {logging_mixin.py:115} INFO - $2.39 billion MONEY
+[2022-06-18 07:33:51,332] {logging_mixin.py:115} INFO - January to April DATE
+[2022-06-18 07:33:51,332] {logging_mixin.py:115} INFO - $1.34 billion MONEY
+[2022-06-18 07:33:51,332] {logging_mixin.py:115} INFO - $857.44-million MONEY
+[2022-06-18 07:33:51,332] {logging_mixin.py:115} INFO - the same period last year.</p>\n DATE
+[2022-06-18 07:33:51,332] {logging_mixin.py:115} INFO - the year DATE
+[2022-06-18 07:33:51,333] {logging_mixin.py:115} INFO - $105 billion MONEY
+[2022-06-18 07:33:51,333] {logging_mixin.py:115} INFO - eight months DATE
+[2022-06-18 07:33:51,333] {logging_mixin.py:115} INFO - $108 billion MONEY
+[2022-06-18 07:33:51,333] {logging_mixin.py:115} INFO - 8.4 months DATE
+[2022-06-18 07:33:51,334] {logging_mixin.py:115} INFO - $103.53 billion MONEY
+[2022-06-18 07:33:51,334] {logging_mixin.py:115} INFO - 2023 DATE
+[2022-06-18 07:33:51,334] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,334] {logging_mixin.py:115} INFO - $2.6-billion MONEY
+[2022-06-18 07:33:51,335] {logging_mixin.py:115} INFO - # MONEY
+[2022-06-18 07:33:51,335] {logging_mixin.py:115} INFO - $20.5 billion MONEY
+[2022-06-18 07:33:51,335] {logging_mixin.py:115} INFO - $17.1 billion MONEY
+[2022-06-18 07:33:51,335] {logging_mixin.py:115} INFO - March DATE
+[2022-06-18 07:33:51,335] {logging_mixin.py:115} INFO - 4% PERCENT
+[2022-06-18 07:33:51,336] {logging_mixin.py:115} INFO - BPO ORG
+[2022-06-18 07:33:51,336] {logging_mixin.py:115} INFO - 5% and 150% PERCENT
+[2022-06-18 07:33:51,336] {logging_mixin.py:115} INFO - $16.8 billion MONEY
+[2022-06-18 07:33:51,336] {logging_mixin.py:115} INFO - 2023 DATE
+[2022-06-18 07:33:51,337] {logging_mixin.py:115} INFO - $13.4 billion MONEY
+[2022-06-18 07:33:51,337] {logging_mixin.py:115} INFO - FDI ORG
+[2022-06-18 07:33:51,337] {logging_mixin.py:115} INFO - $12 billion MONEY
+[2022-06-18 07:33:51,337] {logging_mixin.py:115} INFO - $11.8 billion MONEY
+[2022-06-18 07:33:51,337] {logging_mixin.py:115} INFO - 6.7 MONEY
+[2022-06-18 07:33:51,338] {logging_mixin.py:115} INFO - 2023 CARDINAL
+[2022-06-18 07:33:51,338] {logging_mixin.py:115} INFO - $106 billion MONEY
+[2022-06-18 07:33:51,338] {logging_mixin.py:115} INFO - $109 billion MONEY
+[2022-06-18 07:33:51,338] {logging_mixin.py:115} INFO - March DATE
+[2022-06-18 07:33:51,339] {logging_mixin.py:115} INFO - 2023,&#8221 CARDINAL
+[2022-06-18 07:33:51,339] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,339] {logging_mixin.py:115} INFO - 2023 DATE
+[2022-06-18 07:33:51,339] {logging_mixin.py:115} INFO - 8220;soft&#8221 MONEY
+[2022-06-18 07:33:51,339] {logging_mixin.py:115} INFO - Ukraine GPE
+[2022-06-18 07:33:51,340] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,340] {logging_mixin.py:115} INFO - p>&#8220;The BSP PERSON
+[2022-06-18 07:33:51,340] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,340] {logging_mixin.py:115} INFO - K.B. Ta-asan</strong></p>' PERSON
+[2022-06-18 07:33:51,425] {logging_mixin.py:115} INFO - Sudev Bangah PERSON
+[2022-06-18 07:33:51,425] {logging_mixin.py:115} INFO - IDC ORG
+[2022-06-18 07:33:51,426] {logging_mixin.py:115} INFO - International Data Corporation ORG
+[2022-06-18 07:33:51,426] {logging_mixin.py:115} INFO - ASEAN ORG
+[2022-06-18 07:33:51,426] {logging_mixin.py:115} INFO - Bangah PERSON
+[2022-06-18 07:33:51,426] {logging_mixin.py:115} INFO - June 15 DATE
+[2022-06-18 07:33:51,426] {logging_mixin.py:115} INFO - more than half CARDINAL
+[2022-06-18 07:33:51,427] {logging_mixin.py:115} INFO - 51.90% PERCENT
+[2022-06-18 07:33:51,427] {logging_mixin.py:115} INFO - ASEAN ORG
+[2022-06-18 07:33:51,427] {logging_mixin.py:115} INFO - today DATE
+[2022-06-18 07:33:51,427] {logging_mixin.py:115} INFO - APEC ORG
+[2022-06-18 07:33:51,427] {logging_mixin.py:115} INFO - Asia-Pacific Economic Cooperation LOC
+[2022-06-18 07:33:51,427] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:51,428] {logging_mixin.py:115} INFO - over 97% PERCENT
+[2022-06-18 07:33:51,428] {logging_mixin.py:115} INFO - up to 60% PERCENT
+[2022-06-18 07:33:51,428] {logging_mixin.py:115} INFO - APEC ORG
+[2022-06-18 07:33:51,428] {logging_mixin.py:115} INFO - ASEAN ORG
+[2022-06-18 07:33:51,428] {logging_mixin.py:115} INFO - 7.4% PERCENT
+[2022-06-18 07:33:51,428] {logging_mixin.py:115} INFO - annual DATE
+[2022-06-18 07:33:51,429] {logging_mixin.py:115} INFO - 2025 DATE
+[2022-06-18 07:33:51,429] {logging_mixin.py:115} INFO - ASEAN ORG
+[2022-06-18 07:33:51,429] {logging_mixin.py:115} INFO - 6.3% PERCENT
+[2022-06-18 07:33:51,429] {logging_mixin.py:115} INFO - 2025.</p>\n CARDINAL
+[2022-06-18 07:33:51,429] {logging_mixin.py:115} INFO - Bangah PERSON
+[2022-06-18 07:33:51,430] {logging_mixin.py:115} INFO - 86% PERCENT
+[2022-06-18 07:33:51,430] {logging_mixin.py:115} INFO - ASEAN ORG
+[2022-06-18 07:33:51,430] {logging_mixin.py:115} INFO - 2019 DATE
+[2022-06-18 07:33:51,430] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:51,430] {logging_mixin.py:115} INFO - Innovate ORG
+[2022-06-18 07:33:51,430] {logging_mixin.py:115} INFO - Filipinos NORP
+[2022-06-18 07:33:51,431] {logging_mixin.py:115} INFO - Bangah PERSON
+[2022-06-18 07:33:51,431] {logging_mixin.py:115} INFO - three days DATE
+[2022-06-18 07:33:51,431] {logging_mixin.py:115} INFO - 24 million CARDINAL
+[2022-06-18 07:33:51,431] {logging_mixin.py:115} INFO - Southeast Asia LOC
+[2022-06-18 07:33:51,431] {logging_mixin.py:115} INFO - Indonesia GPE
+[2022-06-18 07:33:51,432] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:51,432] {logging_mixin.py:115} INFO - Bangah PERSON
+[2022-06-18 07:33:51,432] {logging_mixin.py:115} INFO - Patricia B. Mirasol</strong></p PERSON
+[2022-06-18 07:33:51,477] {logging_mixin.py:115} INFO - Philippine NORP
+[2022-06-18 07:33:51,477] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:51,477] {logging_mixin.py:115} INFO - 2022 DATE
+[2022-06-18 07:33:51,478] {logging_mixin.py:115} INFO - 2023 DATE
+[2022-06-18 07:33:51,478] {logging_mixin.py:115} INFO - $19.1 billion MONEY
+[2022-06-18 07:33:51,478] {logging_mixin.py:115} INFO - 4.6% PERCENT
+[2022-06-18 07:33:51,478] {logging_mixin.py:115} INFO - March DATE
+[2022-06-18 07:33:51,478] {logging_mixin.py:115} INFO - $16.3 billion MONEY
+[2022-06-18 07:33:51,479] {logging_mixin.py:115} INFO - this year DATE
+[2022-06-18 07:33:51,479] {logging_mixin.py:115} INFO - 3.8% PERCENT
+[2022-06-18 07:33:51,479] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,479] {logging_mixin.py:115} INFO - BOP ORG
+[2022-06-18 07:33:51,479] {logging_mixin.py:115} INFO - 2019 DATE
+[2022-06-18 07:33:51,479] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,480] {logging_mixin.py:115} INFO - Ukraine GPE
+[2022-06-18 07:33:51,480] {logging_mixin.py:115} INFO - Russia GPE
+[2022-06-18 07:33:51,480] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:51,480] {logging_mixin.py:115} INFO - 2023 DATE
+[2022-06-18 07:33:51,480] {logging_mixin.py:115} INFO - $20.5 billion MONEY
+[2022-06-18 07:33:51,481] {logging_mixin.py:115} INFO - 4.4% PERCENT
+[2022-06-18 07:33:51,481] {logging_mixin.py:115} INFO - $17.1 billion MONEY
+[2022-06-18 07:33:51,481] {logging_mixin.py:115} INFO - 3.7% PERCENT
+[2022-06-18 07:33:51,482] {logging_mixin.py:115} INFO - 2022 DATE
+[2022-06-18 07:33:51,482] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:51,482] {logging_mixin.py:115} INFO - $6.3 billion MONEY
+[2022-06-18 07:33:51,482] {logging_mixin.py:115} INFO - this year DATE
+[2022-06-18 07:33:51,482] {logging_mixin.py:115} INFO - 1.5% PERCENT
+[2022-06-18 07:33:51,483] {logging_mixin.py:115} INFO - March DATE
+[2022-06-18 07:33:51,483] {logging_mixin.py:115} INFO - $4.3 billion MONEY
+[2022-06-18 07:33:51,483] {logging_mixin.py:115} INFO - 1.0% PERCENT
+[2022-06-18 07:33:51,483] {logging_mixin.py:115} INFO - 2023 DATE
+[2022-06-18 07:33:51,484] {logging_mixin.py:115} INFO - $2.6 billion MONEY
+[2022-06-18 07:33:51,484] {logging_mixin.py:115} INFO - 0.6% PERCENT
+[2022-06-18 07:33:51,484] {logging_mixin.py:115} INFO - Filipinos NORP
+[2022-06-18 07:33:51,484] {logging_mixin.py:115} INFO - Philippine NORP
+[2022-06-18 07:33:51,485] {logging_mixin.py:115} INFO - 4% PERCENT
+[2022-06-18 07:33:51,485] {logging_mixin.py:115} INFO - this year DATE
+[2022-06-18 07:33:51,485] {logging_mixin.py:115} INFO - 2023 DATE
+[2022-06-18 07:33:51,485] {logging_mixin.py:115} INFO - BSP ORG
+[2022-06-18 07:33:51,486] {logging_mixin.py:115} INFO - $105 billion MONEY
+[2022-06-18 07:33:51,486] {logging_mixin.py:115} INFO - end-2022 DATE
+[2022-06-18 07:33:51,486] {logging_mixin.py:115} INFO - $106 billion MONEY
+[2022-06-18 07:33:51,486] {logging_mixin.py:115} INFO - March DATE
+[2022-06-18 07:33:51,487] {logging_mixin.py:115} INFO - $108 billion MONEY
+[2022-06-18 07:33:51,487] {logging_mixin.py:115} INFO - $109 billion MONEY
+[2022-06-18 07:33:51,756] {logging_mixin.py:115} INFO - 400;">Father’s Day DATE
+[2022-06-18 07:33:51,756] {logging_mixin.py:115} INFO - 400;">tatay</span><span CARDINAL
+[2022-06-18 07:33:51,756] {logging_mixin.py:115} INFO - style="font TIME
+[2022-06-18 07:33:51,757] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,757] {logging_mixin.py:115} INFO - 400;">itay</span><span CARDINAL
+[2022-06-18 07:33:51,757] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,757] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,757] {logging_mixin.py:115} INFO - id/19459/s ORG
+[2022-06-18 07:33:51,757] {logging_mixin.py:115} INFO - class="alignnone wp-image-455488 WORK_OF_ART
+[2022-06-18 07:33:51,758] {logging_mixin.py:115} INFO - href="https://shop.wilcon.com.ph PRODUCT
+[2022-06-18 07:33:51,758] {logging_mixin.py:115} INFO - class="alignnone wp-image-455490 PRODUCT
+[2022-06-18 07:33:51,758] {logging_mixin.py:115} INFO - 400;">Nobody CARDINAL
+[2022-06-18 07:33:51,758] {logging_mixin.py:115} INFO - half CARDINAL
+[2022-06-18 07:33:51,758] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,759] {logging_mixin.py:115} INFO - class="alignnone wp-image-455755 PRODUCT
+[2022-06-18 07:33:51,759] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,759] {logging_mixin.py:115} INFO - class="alignnone wp-image-455756 PRODUCT
+[2022-06-18 07:33:51,759] {logging_mixin.py:115} INFO - 400;">No CARDINAL
+[2022-06-18 07:33:51,759] {logging_mixin.py:115} INFO - Truper</b><span GPE
+[2022-06-18 07:33:51,759] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,760] {logging_mixin.py:115} INFO - one CARDINAL
+[2022-06-18 07:33:51,760] {logging_mixin.py:115} INFO - 400;">carries CARDINAL
+[2022-06-18 07:33:51,760] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,760] {logging_mixin.py:115} INFO - class="alignnone wp-image-455759 PRODUCT
+[2022-06-18 07:33:51,760] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,760] {logging_mixin.py:115} INFO - class="alignnone wp-image-455760 PRODUCT
+[2022-06-18 07:33:51,761] {logging_mixin.py:115} INFO - 400;">If CARDINAL
+[2022-06-18 07:33:51,761] {logging_mixin.py:115} INFO - 400;">offers CARDINAL
+[2022-06-18 07:33:51,761] {logging_mixin.py:115} INFO - 3 to 6 CARDINAL
+[2022-06-18 07:33:51,761] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,762] {logging_mixin.py:115} INFO - class="alignnone wp-image-455762 PRODUCT
+[2022-06-18 07:33:51,762] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,762] {logging_mixin.py:115} INFO - class="alignnone wp-image-455763 PRODUCT
+[2022-06-18 07:33:51,762] {logging_mixin.py:115} INFO - 400;">Aside CARDINAL
+[2022-06-18 07:33:51,762] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,762] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,763] {logging_mixin.py:115} INFO - class="alignnone wp-image-455768 WORK_OF_ART
+[2022-06-18 07:33:51,763] {logging_mixin.py:115} INFO - daily DATE
+[2022-06-18 07:33:51,763] {logging_mixin.py:115} INFO - Heim GPE
+[2022-06-18 07:33:51,763] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,763] {logging_mixin.py:115} INFO - id/17397/s/ ORG
+[2022-06-18 07:33:51,764] {logging_mixin.py:115} INFO - class="alignnone wp-image-455769 PRODUCT
+[2022-06-18 07:33:51,764] {logging_mixin.py:115} INFO - 400;">Wall DATE
+[2022-06-18 07:33:51,764] {logging_mixin.py:115} INFO - Heim NORP
+[2022-06-18 07:33:51,764] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,764] {logging_mixin.py:115} INFO - id/16721/s ORG
+[2022-06-18 07:33:51,765] {logging_mixin.py:115} INFO - class="alignnone wp-image-455770 PRODUCT
+[2022-06-18 07:33:51,765] {logging_mixin.py:115} INFO - 400;">These CARDINAL
+[2022-06-18 07:33:51,765] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,765] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,765] {logging_mixin.py:115} INFO - class="alignnone wp-image-455771 WORK_OF_ART
+[2022-06-18 07:33:51,765] {logging_mixin.py:115} INFO - 400;">Get CARDINAL
+[2022-06-18 07:33:51,766] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,766] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,766] {logging_mixin.py:115} INFO - alt= ORG
+[2022-06-18 07:33:51,766] {logging_mixin.py:115} INFO - class="alignnone wp-image-455772 PRODUCT
+[2022-06-18 07:33:51,767] {logging_mixin.py:115} INFO - Air-Purifier.png PRODUCT
+[2022-06-18 07:33:51,767] {logging_mixin.py:115} INFO - 400;">If CARDINAL
+[2022-06-18 07:33:51,767] {logging_mixin.py:115} INFO - bacteria.</span></p>\n<p><b>Coffee ORG
+[2022-06-18 07:33:51,767] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,768] {logging_mixin.py:115} INFO - id/18430/s ORG
+[2022-06-18 07:33:51,768] {logging_mixin.py:115} INFO - class="alignnone wp-image-455773 PRODUCT
+[2022-06-18 07:33:51,768] {logging_mixin.py:115} INFO - a busy day DATE
+[2022-06-18 07:33:51,768] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,768] {logging_mixin.py:115} INFO - class="alignnone wp-image-455774 PRODUCT
+[2022-06-18 07:33:51,769] {logging_mixin.py:115} INFO - 400;">If CARDINAL
+[2022-06-18 07:33:51,769] {logging_mixin.py:115} INFO - one CARDINAL
+[2022-06-18 07:33:51,769] {logging_mixin.py:115} INFO - Nobizzi</b><span GPE
+[2022-06-18 07:33:51,769] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,769] {logging_mixin.py:115} INFO - Car care</b></p>\n< LAW
+[2022-06-18 07:33:51,769] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,770] {logging_mixin.py:115} INFO - mu-x1.html"><img ORG
+[2022-06-18 07:33:51,770] {logging_mixin.py:115} INFO - class="alignnone wp-image-455775 WORK_OF_ART
+[2022-06-18 07:33:51,770] {logging_mixin.py:115} INFO - p><a href="https://shop.wilcon.com.ph PERSON
+[2022-06-18 07:33:51,770] {logging_mixin.py:115} INFO - class="alignnone wp-image-455776 PRODUCT
+[2022-06-18 07:33:51,770] {logging_mixin.py:115} INFO - Elite Auto ORG
+[2022-06-18 07:33:51,771] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,771] {logging_mixin.py:115} INFO - class="alignnone wp-image-455777 WORK_OF_ART
+[2022-06-18 07:33:51,771] {logging_mixin.py:115} INFO - 400;">If CARDINAL
+[2022-06-18 07:33:51,771] {logging_mixin.py:115} INFO - two CARDINAL
+[2022-06-18 07:33:51,771] {logging_mixin.py:115} INFO - P500 GPE
+[2022-06-18 07:33:51,771] {logging_mixin.py:115} INFO - P1,000 GPE
+[2022-06-18 07:33:51,772] {logging_mixin.py:115} INFO - two CARDINAL
+[2022-06-18 07:33:51,772] {logging_mixin.py:115} INFO - 400;">Surprise CARDINAL
+[2022-06-18 07:33:51,772] {logging_mixin.py:115} INFO - Wilcon Depot ORG
+[2022-06-18 07:33:51,772] {logging_mixin.py:115} INFO - Wilcon Depot ORG
+[2022-06-18 07:33:51,772] {logging_mixin.py:115} INFO - 76 CARDINAL
+[2022-06-18 07:33:51,772] {logging_mixin.py:115} INFO - Wilcon ORG
+[2022-06-18 07:33:51,773] {logging_mixin.py:115} INFO - Filipino NORP
+[2022-06-18 07:33:51,773] {logging_mixin.py:115} INFO - the years DATE
+[2022-06-18 07:33:51,773] {logging_mixin.py:115} INFO - 45 years DATE
+[2022-06-18 07:33:51,773] {logging_mixin.py:115} INFO - Tiles GPE
+[2022-06-18 07:33:51,773] {logging_mixin.py:115} INFO - Sanitarywares ORG
+[2022-06-18 07:33:51,774] {logging_mixin.py:115} INFO - Building Materials ORG
+[2022-06-18 07:33:51,774] {logging_mixin.py:115} INFO - Hardware ORG
+[2022-06-18 07:33:51,774] {logging_mixin.py:115} INFO - DIY ORG
+[2022-06-18 07:33:51,774] {logging_mixin.py:115} INFO - 400;">You CARDINAL
+[2022-06-18 07:33:51,775] {logging_mixin.py:115} INFO - style="font PERSON
+[2022-06-18 07:33:51,775] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,775] {logging_mixin.py:115} INFO - Collect / Deliver ORG
+[2022-06-18 07:33:51,775] {logging_mixin.py:115} INFO - href="https://shop.wilcon.com.ph/"><span GPE
+[2022-06-18 07:33:51,775] {logging_mixin.py:115} INFO - style="font PERSON
+[2022-06-18 07:33:51,775] {logging_mixin.py:115} INFO - 400;">shop.wilcon.com.ph</span></a></em><span CARDINAL
+[2022-06-18 07:33:51,776] {logging_mixin.py:115} INFO - style="font PERSON
+[2022-06-18 07:33:51,776] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,776] {logging_mixin.py:115} INFO - style="font PERSON
+[2022-06-18 07:33:51,776] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,776] {logging_mixin.py:115} INFO - CALL/Viber ORG
+[2022-06-18 07:33:51,776] {logging_mixin.py:115} INFO - href="http://www.wilcon.com.ph/content/328-bcc-branches"><span ORG
+[2022-06-18 07:33:51,777] {logging_mixin.py:115} INFO - style="font PERSON
+[2022-06-18 07:33:51,777] {logging_mixin.py:115} INFO - 400;">www.wilcon.com.ph CARDINAL
+[2022-06-18 07:33:51,777] {logging_mixin.py:115} INFO - 400;">.</span></em></p>\n CARDINAL
+[2022-06-18 07:33:51,777] {logging_mixin.py:115} INFO - Facebook Messenger App. PERSON
+[2022-06-18 07:33:51,777] {logging_mixin.py:115} INFO - GCash ORG
+[2022-06-18 07:33:51,777] {logging_mixin.py:115} INFO - PayMaya ORG
+[2022-06-18 07:33:51,778] {logging_mixin.py:115} INFO - InstaPay ORG
+[2022-06-18 07:33:51,778] {logging_mixin.py:115} INFO - PesoNet ORG
+[2022-06-18 07:33:51,778] {logging_mixin.py:115} INFO - WeChat ORG
+[2022-06-18 07:33:51,778] {logging_mixin.py:115} INFO - Alipay PERSON
+[2022-06-18 07:33:51,779] {logging_mixin.py:115} INFO - 400;">For CARDINAL
+[2022-06-18 07:33:51,779] {logging_mixin.py:115} INFO - Wilcon ORG
+[2022-06-18 07:33:51,779] {logging_mixin.py:115} INFO - style="font PERSON
+[2022-06-18 07:33:51,779] {logging_mixin.py:115} INFO - 400;"><em CARDINAL
+[2022-06-18 07:33:51,780] {logging_mixin.py:115} INFO - www.wilcon.com.ph</em></span></a><span ORG
+[2022-06-18 07:33:51,780] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,780] {logging_mixin.py:115} INFO - 400;">Facebook</span><span CARDINAL
+[2022-06-18 07:33:51,780] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,780] {logging_mixin.py:115} INFO - 400;">Instagram</span><span CARDINAL
+[2022-06-18 07:33:51,780] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,781] {logging_mixin.py:115} INFO - 400;">Viber CARDINAL
+[2022-06-18 07:33:51,781] {logging_mixin.py:115} INFO - style="font PERSON
+[2022-06-18 07:33:51,781] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,781] {logging_mixin.py:115} INFO - 400;">LinkedIn</span><span CARDINAL
+[2022-06-18 07:33:51,781] {logging_mixin.py:115} INFO - 400 CARDINAL
+[2022-06-18 07:33:51,782] {logging_mixin.py:115} INFO - 400;">YouTube</span><span CARDINAL
+[2022-06-18 07:33:51,782] {logging_mixin.py:115} INFO - 400;">.</span></p>\n CARDINAL
+[2022-06-18 07:33:51,782] {logging_mixin.py:115} INFO - BusinessWorld ORG
+[2022-06-18 07:33:51,782] {logging_mixin.py:115} INFO - BusinessWorld ORG
+[2022-06-18 07:33:51,783] {logging_mixin.py:115} INFO - BusinessWorld ORG
+[2022-06-18 07:33:51,783] {logging_mixin.py:115} INFO - Viber DATE
+[2022-06-18 07:33:51,867] {logging_mixin.py:115} INFO - p><a href="https://crypto-academy.org PERSON
+[2022-06-18 07:33:51,868] {logging_mixin.py:115} INFO - style="font PERSON
+[2022-06-18 07:33:51,868] {logging_mixin.py:115} INFO - Alberto Canteli PERSON
+[2022-06-18 07:33:51,868] {logging_mixin.py:115} INFO - Havas Group ORG
+[2022-06-18 07:33:51,868] {logging_mixin.py:115} INFO - Nordics ORG
+[2022-06-18 07:33:51,869] {logging_mixin.py:115} INFO - CEE ORG
+[2022-06-18 07:33:51,869] {logging_mixin.py:115} INFO - Eastern Europe LOC
+[2022-06-18 07:33:51,869] {logging_mixin.py:115} INFO - Middle East LOC
+[2022-06-18 07:33:51,869] {logging_mixin.py:115} INFO - Southeast Asia LOC
+[2022-06-18 07:33:51,869] {logging_mixin.py:115} INFO - Korea GPE
+[2022-06-18 07:33:51,870] {logging_mixin.py:115} INFO - Japan GPE
+[2022-06-18 07:33:51,870] {logging_mixin.py:115} INFO - the coming three to five years DATE
+[2022-06-18 07:33:51,870] {logging_mixin.py:115} INFO - 3.0 CARDINAL
+[2022-06-18 07:33:51,870] {logging_mixin.py:115} INFO - and\xa0AI GPE
+[2022-06-18 07:33:51,871] {logging_mixin.py:115} INFO - Canteli PERSON
+[2022-06-18 07:33:51,871] {logging_mixin.py:115} INFO - Canteli PERSON
+[2022-06-18 07:33:51,871] {logging_mixin.py:115} INFO - 3.0 CARDINAL
+[2022-06-18 07:33:51,871] {logging_mixin.py:115} INFO - work.\xa0</span><span style="font ORG
+[2022-06-18 07:33:51,871] {logging_mixin.py:115} INFO - inherit;">Havas Group ORG
+[2022-06-18 07:33:51,872] {logging_mixin.py:115} INFO - Metaverse ORG
+[2022-06-18 07:33:51,872] {logging_mixin.py:115} INFO - Havas GPE
+[2022-06-18 07:33:51,872] {logging_mixin.py:115} INFO - early this year DATE
+[2022-06-18 07:33:51,872] {logging_mixin.py:115} INFO - and\xa0</span><a href="https://www.havasgroup.com/havas GPE
+[2022-06-18 07:33:51,873] {logging_mixin.py:115} INFO - blockchain.pdf"><span style="font PERSON
+[2022-06-18 07:33:51,873] {logging_mixin.py:115} INFO - Blockchain</span></a><span GPE
+[2022-06-18 07:33:51,873] {logging_mixin.py:115} INFO - style="font PERSON
+[2022-06-18 07:33:51,873] {logging_mixin.py:115} INFO - 2018.\xa0</span></p>\n CARDINAL
+[2022-06-18 07:33:51,874] {logging_mixin.py:115} INFO - Group ORG
+[2022-06-18 07:33:51,874] {logging_mixin.py:115} INFO - Asia Pacific LOC
+[2022-06-18 07:33:51,874] {logging_mixin.py:115} INFO - Canteli.</span></p>\n PERSON
+[2022-06-18 07:33:51,874] {logging_mixin.py:115} INFO - Korea GPE
+[2022-06-18 07:33:51,874] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:51,875] {logging_mixin.py:115} INFO - Singapore GPE
+[2022-06-18 07:33:51,875] {logging_mixin.py:115} INFO - Canteli,\xa0</span><a PERSON
+[2022-06-18 07:33:51,875] {logging_mixin.py:115} INFO - style="font ORDINAL
+[2022-06-18 07:33:51,875] {logging_mixin.py:115} INFO - Canteli PERSON
+[2022-06-18 07:33:51,875] {logging_mixin.py:115} INFO - Patricia B. Mirasol</strong></span></p PERSON
+[2022-06-18 07:33:51,926] {logging_mixin.py:115} INFO - The United States GPE
+[2022-06-18 07:33:51,926] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:51,927] {logging_mixin.py:115} INFO - Nicholas Burns PERSON
+[2022-06-18 07:33:51,927] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:51,927] {logging_mixin.py:115} INFO - Beijing GPE
+[2022-06-18 07:33:51,927] {logging_mixin.py:115} INFO - zero CARDINAL
+[2022-06-18 07:33:51,927] {logging_mixin.py:115} INFO - early 2023 DATE
+[2022-06-18 07:33:51,927] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:51,928] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:51,928] {logging_mixin.py:115} INFO - Beijing GPE
+[2022-06-18 07:33:51,928] {logging_mixin.py:115} INFO - second ORDINAL
+[2022-06-18 07:33:51,928] {logging_mixin.py:115} INFO - Shanghai.\xa0</span></p>\n DATE
+[2022-06-18 07:33:51,928] {logging_mixin.py:115} INFO - Burns PERSON
+[2022-06-18 07:33:51,928] {logging_mixin.py:115} INFO - Brookings Institution ORG
+[2022-06-18 07:33:51,929] {logging_mixin.py:115} INFO - zero CARDINAL
+[2022-06-18 07:33:51,929] {logging_mixin.py:115} INFO - the beginning months of 2023 DATE
+[2022-06-18 07:33:51,929] {logging_mixin.py:115} INFO - Chinese NORP
+[2022-06-18 07:33:51,929] {logging_mixin.py:115} INFO - Burns PERSON
+[2022-06-18 07:33:51,929] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:51,929] {logging_mixin.py:115} INFO - Burns PERSON
+[2022-06-18 07:33:51,930] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:51,930] {logging_mixin.py:115} INFO - Chinese NORP
+[2022-06-18 07:33:51,930] {logging_mixin.py:115} INFO - around 5.5% PERCENT
+[2022-06-18 07:33:51,930] {logging_mixin.py:115} INFO - this year DATE
+[2022-06-18 07:33:51,930] {logging_mixin.py:115} INFO - Burns PERSON
+[2022-06-18 07:33:51,930] {logging_mixin.py:115} INFO - Beijing GPE
+[2022-06-18 07:33:51,931] {logging_mixin.py:115} INFO - State ORG
+[2022-06-18 07:33:51,931] {logging_mixin.py:115} INFO - Antony Blinken PERSON
+[2022-06-18 07:33:51,931] {logging_mixin.py:115} INFO - May DATE
+[2022-06-18 07:33:51,931] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:51,931] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:51,932] {logging_mixin.py:115} INFO - Washington GPE
+[2022-06-18 07:33:51,932] {logging_mixin.py:115} INFO - Beijing GPE
+[2022-06-18 07:33:51,932] {logging_mixin.py:115} INFO - Weibo GPE
+[2022-06-18 07:33:51,932] {logging_mixin.py:115} INFO - WeChat ORG
+[2022-06-18 07:33:51,932] {logging_mixin.py:115} INFO - about two and a half hours CARDINAL
+[2022-06-18 07:33:51,932] {logging_mixin.py:115} INFO - Burns PERSON
+[2022-06-18 07:33:51,933] {logging_mixin.py:115} INFO - Embassy ORG
+[2022-06-18 07:33:51,933] {logging_mixin.py:115} INFO - days later DATE
+[2022-06-18 07:33:51,933] {logging_mixin.py:115} INFO - Burns PERSON
+[2022-06-18 07:33:51,933] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:51,933] {logging_mixin.py:115} INFO - the United States GPE
+[2022-06-18 07:33:51,934] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:51,934] {logging_mixin.py:115} INFO - Chinese NORP
+[2022-06-18 07:33:51,934] {logging_mixin.py:115} INFO - 8230 MONEY
+[2022-06-18 07:33:51,934] {logging_mixin.py:115} INFO - the last five to 10 years DATE
+[2022-06-18 07:33:51,934] {logging_mixin.py:115} INFO - Michael Martina PERSON
+[2022-06-18 07:33:52,003] {logging_mixin.py:115} INFO - class="p1">At ORG
+[2022-06-18 07:33:52,004] {logging_mixin.py:115} INFO - Larry Alcala PERSON
+[2022-06-18 07:33:52,004] {logging_mixin.py:115} INFO - Filipino LANGUAGE
+[2022-06-18 07:33:52,004] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,005] {logging_mixin.py:115} INFO - Manila GPE
+[2022-06-18 07:33:52,005] {logging_mixin.py:115} INFO - Filipino NORP
+[2022-06-18 07:33:52,005] {logging_mixin.py:115} INFO - Alcala PERSON
+[2022-06-18 07:33:52,005] {logging_mixin.py:115} INFO - Alcala PERSON
+[2022-06-18 07:33:52,005] {logging_mixin.py:115} INFO - National Heritage Month ORG
+[2022-06-18 07:33:52,006] {logging_mixin.py:115} INFO - Binhi GPE
+[2022-06-18 07:33:52,006] {logging_mixin.py:115} INFO - Kulturang Pilipino PERSON
+[2022-06-18 07:33:52,006] {logging_mixin.py:115} INFO - the SMX Convention Center Aura FAC
+[2022-06-18 07:33:52,006] {logging_mixin.py:115} INFO - Bonifacio Global City PERSON
+[2022-06-18 07:33:52,006] {logging_mixin.py:115} INFO - May 31 DATE
+[2022-06-18 07:33:52,007] {logging_mixin.py:115} INFO - Alcala PERSON
+[2022-06-18 07:33:52,007] {logging_mixin.py:115} INFO - Alcala PERSON
+[2022-06-18 07:33:52,007] {logging_mixin.py:115} INFO - Ang Illustrador ORG
+[2022-06-18 07:33:52,007] {logging_mixin.py:115} INFO - Kabataan GPE
+[2022-06-18 07:33:52,007] {logging_mixin.py:115} INFO - INK ORG
+[2022-06-18 07:33:52,007] {logging_mixin.py:115} INFO - this day DATE
+[2022-06-18 07:33:52,008] {logging_mixin.py:115} INFO - Ruben PERSON
+[2022-06-18 07:33:52,008] {logging_mixin.py:115} INFO - the University of the Philippines Diliman College of Fine Arts.</p>\n ORG
+[2022-06-18 07:33:52,008] {logging_mixin.py:115} INFO - 2018 DATE
+[2022-06-18 07:33:52,008] {logging_mixin.py:115} INFO - Alcala PERSON
+[2022-06-18 07:33:52,008] {logging_mixin.py:115} INFO - the Order of National Artists of the ORG
+[2022-06-18 07:33:52,008] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,009] {logging_mixin.py:115} INFO - de PERSON
+[2022-06-18 07:33:52,009] {logging_mixin.py:115} INFO - Alcala ORG
+[2022-06-18 07:33:52,009] {logging_mixin.py:115} INFO - Filipino LANGUAGE
+[2022-06-18 07:33:52,009] {logging_mixin.py:115} INFO - the SMX Aura FAC
+[2022-06-18 07:33:52,009] {logging_mixin.py:115} INFO - June to July DATE
+[2022-06-18 07:33:52,010] {logging_mixin.py:115} INFO - 25-year-old DATE
+[2022-06-18 07:33:52,010] {logging_mixin.py:115} INFO - de Jesus PERSON
+[2022-06-18 07:33:52,010] {logging_mixin.py:115} INFO - Aldy Aguirre PERSON
+[2022-06-18 07:33:52,010] {logging_mixin.py:115} INFO - Carl Javier PERSON
+[2022-06-18 07:33:52,010] {logging_mixin.py:115} INFO - the end of June DATE
+[2022-06-18 07:33:52,010] {logging_mixin.py:115} INFO - Manix ORG
+[2022-06-18 07:33:52,011] {logging_mixin.py:115} INFO - the Metropolitan Museum of Manila ORG
+[2022-06-18 07:33:52,011] {logging_mixin.py:115} INFO - Filipino Heritage Festival, Inc. EVENT
+[2022-06-18 07:33:52,011] {logging_mixin.py:115} INFO - the National Commission for Culture and the Arts ORG
+[2022-06-18 07:33:52,011] {logging_mixin.py:115} INFO - DDB Group Philippines ORG
+[2022-06-18 07:33:52,011] {logging_mixin.py:115} INFO - Security Bank ORG
+[2022-06-18 07:33:52,011] {logging_mixin.py:115} INFO - BusinessWorld ORG
+[2022-06-18 07:33:52,012] {logging_mixin.py:115} INFO - BusinessWorld ORG
+[2022-06-18 07:33:52,012] {logging_mixin.py:115} INFO - BusinessWorld ORG
+[2022-06-18 07:33:52,012] {logging_mixin.py:115} INFO - Viber DATE
+[2022-06-18 07:33:52,076] {logging_mixin.py:115} INFO - >Elon Musk PRODUCT
+[2022-06-18 07:33:52,077] {logging_mixin.py:115} INFO - first ORDINAL
+[2022-06-18 07:33:52,077] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,077] {logging_mixin.py:115} INFO - $44 billion MONEY
+[2022-06-18 07:33:52,078] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,078] {logging_mixin.py:115} INFO - 10 minutes TIME
+[2022-06-18 07:33:52,078] {logging_mixin.py:115} INFO - Twitter ORG
+[2022-06-18 07:33:52,078] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,078] {logging_mixin.py:115} INFO - Tesla ORG
+[2022-06-18 07:33:52,078] {logging_mixin.py:115} INFO - 229 million CARDINAL
+[2022-06-18 07:33:52,079] {logging_mixin.py:115} INFO - Twitter PERSON
+[2022-06-18 07:33:52,079] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,079] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,079] {logging_mixin.py:115} INFO - first ORDINAL
+[2022-06-18 07:33:52,079] {logging_mixin.py:115} INFO - Twitter ORG
+[2022-06-18 07:33:52,079] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,080] {logging_mixin.py:115} INFO - 8230 MONEY
+[2022-06-18 07:33:52,080] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,080] {logging_mixin.py:115} INFO - Slack PERSON
+[2022-06-18 07:33:52,080] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,080] {logging_mixin.py:115} INFO - Twitter ORG
+[2022-06-18 07:33:52,080] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,081] {logging_mixin.py:115} INFO - Twitter ORG
+[2022-06-18 07:33:52,081] {logging_mixin.py:115} INFO - San Francisco GPE
+[2022-06-18 07:33:52,081] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,081] {logging_mixin.py:115} INFO - 1.5% PERCENT
+[2022-06-18 07:33:52,081] {logging_mixin.py:115} INFO - Tesla ORG
+[2022-06-18 07:33:52,081] {logging_mixin.py:115} INFO - more than 9% PERCENT
+[2022-06-18 07:33:52,082] {logging_mixin.py:115} INFO - afternoon TIME
+[2022-06-18 07:33:52,082] {logging_mixin.py:115} INFO - Musk PERSON
+[2022-06-18 07:33:52,082] {logging_mixin.py:115} INFO - the end of the Q&amp;A DATE
+[2022-06-18 07:33:52,082] {logging_mixin.py:115} INFO - two CARDINAL
+[2022-06-18 07:33:52,082] {logging_mixin.py:115} INFO - 69 CARDINAL
+[2022-06-18 07:33:52,082] {logging_mixin.py:115} INFO - Sheila Dang/Reuters</strong></p>' PERSON
+[2022-06-18 07:33:52,092] {logging_mixin.py:115} INFO - 0    {'WASHINGTON &#': 'ORG', '8211': 'DATE', 'The ...
+1    {'Philippine': 'NORP', 'Ferdinand R. Marcos': ...
+2    {'Pilipinas': 'GPE', 'this year': 'DATE', 'Fri...
+3    {'Sudev Bangah': 'PERSON', 'IDC': 'ORG', 'Inte...
+4    {'Philippine': 'NORP', 'Friday': 'DATE', '2022...
+5    {'400;">Father’s Day': 'DATE', '400;">tatay</s...
+6    {'p><a href="https://crypto-academy.org': 'PER...
+7    {'The United States': 'GPE', 'China': 'GPE', '...
+8    {'class="p1">At': 'ORG', 'Larry Alcala': 'PERS...
+9    {'>Elon Musk': 'PRODUCT', 'first': 'ORDINAL', ...
+Name: NER, dtype: object
+[2022-06-18 07:33:52,121] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,121] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,121] {logging_mixin.py:115} INFO - 9th ORDINAL
+[2022-06-18 07:33:52,122] {logging_mixin.py:115} INFO - Asian NORP
+[2022-06-18 07:33:52,122] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,122] {logging_mixin.py:115} INFO - Aspire Dome FAC
+[2022-06-18 07:33:52,122] {logging_mixin.py:115} INFO - Doha GPE
+[2022-06-18 07:33:52,122] {logging_mixin.py:115} INFO - Qatar GPE
+[2022-06-18 07:33:52,123] {logging_mixin.py:115} INFO - 14.933 CARDINAL
+[2022-06-18 07:33:52,123] {logging_mixin.py:115} INFO - Asian NORP
+[2022-06-18 07:33:52,123] {logging_mixin.py:115} INFO - 22-year-old DATE
+[2022-06-18 07:33:52,123] {logging_mixin.py:115} INFO - South Korea's GPE
+[2022-06-18 07:33:52,123] {logging_mixin.py:115} INFO - Kim Hansol PERSON
+[2022-06-18 07:33:52,124] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:52,124] {logging_mixin.py:115} INFO - Yang Jiaxing PERSON
+[2022-06-18 07:33:52,124] {logging_mixin.py:115} INFO - Korean NORP
+[2022-06-18 07:33:52,124] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,124] {logging_mixin.py:115} INFO - Yulo PERSON
+[2022-06-18 07:33:52,125] {logging_mixin.py:115} INFO - FIG Artistic World Championships ORG
+[2022-06-18 07:33:52,125] {logging_mixin.py:115} INFO - Liverpool GPE
+[2022-06-18 07:33:52,125] {logging_mixin.py:115} INFO - October 29 to November 6 DATE
+[2022-06-18 07:33:52,125] {logging_mixin.py:115} INFO - Filipino NORP
+[2022-06-18 07:33:52,125] {logging_mixin.py:115} INFO - fourth ORDINAL
+[2022-06-18 07:33:52,126] {logging_mixin.py:115} INFO - Asian NORP
+[2022-06-18 07:33:52,148] {logging_mixin.py:115} INFO - LIGAO CITY GPE
+[2022-06-18 07:33:52,148] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,148] {logging_mixin.py:115} INFO - Army ORG
+[2022-06-18 07:33:52,149] {logging_mixin.py:115} INFO - Camp Weene Martillana FAC
+[2022-06-18 07:33:52,149] {logging_mixin.py:115} INFO - Camarines Sur ORG
+[2022-06-18 07:33:52,149] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,149] {logging_mixin.py:115} INFO - morning TIME
+[2022-06-18 07:33:52,149] {logging_mixin.py:115} INFO - June 18 DATE
+[2022-06-18 07:33:52,150] {logging_mixin.py:115} INFO - John Paul Belleza PERSON
+[2022-06-18 07:33:52,150] {logging_mixin.py:115} INFO - Army ORG
+[2022-06-18 07:33:52,150] {logging_mixin.py:115} INFO - 9th Infantry Division ORG
+[2022-06-18 07:33:52,150] {logging_mixin.py:115} INFO - around 1:30 a.m. TIME
+[2022-06-18 07:33:52,150] {logging_mixin.py:115} INFO - Army ORG
+[2022-06-18 07:33:52,151] {logging_mixin.py:115} INFO - the 5th Finance Service Field Office Fin ORG
+[2022-06-18 07:33:52,151] {logging_mixin.py:115} INFO - href="https://newsinfo.inquirer.net/1612566 ORG
+[2022-06-18 07:33:52,151] {logging_mixin.py:115} INFO - Camarines Sur Army ORG
+[2022-06-18 07:33:52,171] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,171] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,171] {logging_mixin.py:115} INFO - COVID-19 GPE
+[2022-06-18 07:33:52,172] {logging_mixin.py:115} INFO - Department of Health ORG
+[2022-06-18 07:33:52,172] {logging_mixin.py:115} INFO - Maria Rosario Vergeire PERSON
+[2022-06-18 07:33:52,172] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,172] {logging_mixin.py:115} INFO - Laging Handa ORG
+[2022-06-18 07:33:52,172] {logging_mixin.py:115} INFO - mga kaso PERSON
+[2022-06-18 07:33:52,172] {logging_mixin.py:115} INFO - po ang pagtaas PERSON
+[2022-06-18 07:33:52,173] {logging_mixin.py:115} INFO - pero kailangan PERSON
+[2022-06-18 07:33:52,173] {logging_mixin.py:115} INFO - tayo ORG
+[2022-06-18 07:33:52,173] {logging_mixin.py:115} INFO - 350 CARDINAL
+[2022-06-18 07:33:52,173] {logging_mixin.py:115} INFO - 8216;not MONEY
+[2022-06-18 07:33:52,173] {logging_mixin.py:115} INFO - surge&#8217;</a ORG
+[2022-06-18 07:33:52,195] {logging_mixin.py:115} INFO - Boston Celtics ORG
+[2022-06-18 07:33:52,195] {logging_mixin.py:115} INFO - Ime Udoka PERSON
+[2022-06-18 07:33:52,195] {logging_mixin.py:115} INFO - NBA Finals ORG
+[2022-06-18 07:33:52,195] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,196] {logging_mixin.py:115} INFO - Celtics ORG
+[2022-06-18 07:33:52,196] {logging_mixin.py:115} INFO - 103 CARDINAL
+[2022-06-18 07:33:52,196] {logging_mixin.py:115} INFO - the Golden State Warriors FAC
+[2022-06-18 07:33:52,196] {logging_mixin.py:115} INFO - seven CARDINAL
+[2022-06-18 07:33:52,196] {logging_mixin.py:115} INFO - 4 CARDINAL
+[2022-06-18 07:33:52,196] {logging_mixin.py:115} INFO - Udoka ORG
+[2022-06-18 07:33:52,197] {logging_mixin.py:115} INFO - href="https://sports.inquirer.net/466898 ORG
+[2022-06-18 07:33:52,197] {logging_mixin.py:115} INFO - NBA Finals ORG
+[2022-06-18 07:33:52,197] {logging_mixin.py:115} INFO - Celtics ORG
+[2022-06-18 07:33:52,220] {logging_mixin.py:115} INFO - SAN FRANCISCO - Golden State's GPE
+[2022-06-18 07:33:52,220] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,220] {logging_mixin.py:115} INFO - fourth ORDINAL
+[2022-06-18 07:33:52,221] {logging_mixin.py:115} INFO - eight seasons DATE
+[2022-06-18 07:33:52,221] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,221] {logging_mixin.py:115} INFO - 4 CARDINAL
+[2022-06-18 07:33:52,221] {logging_mixin.py:115} INFO - the Boston Celtics ORG
+[2022-06-18 07:33:52,221] {logging_mixin.py:115} INFO - the previous two seasons DATE
+[2022-06-18 07:33:52,222] {logging_mixin.py:115} INFO - Stephen Curry PERSON
+[2022-06-18 07:33:52,222] {logging_mixin.py:115} INFO - Klay Thompson PERSON
+[2022-06-18 07:33:52,222] {logging_mixin.py:115} INFO - Draymond Green ORG
+[2022-06-18 07:33:52,222] {logging_mixin.py:115} INFO - Nuggets ORG
+[2022-06-18 07:33:52,222] {logging_mixin.py:115} INFO - Grizzlies ORG
+[2022-06-18 07:33:52,222] {logging_mixin.py:115} INFO - Mavericks PERSON
+[2022-06-18 07:33:52,223] {logging_mixin.py:115} INFO - Celtics ORG
+[2022-06-18 07:33:52,223] {logging_mixin.py:115} INFO - Andrew Wiggins PERSON
+[2022-06-18 07:33:52,223] {logging_mixin.py:115} INFO - Jordan Poole PERSON
+[2022-06-18 07:33:52,223] {logging_mixin.py:115} INFO - next season DATE
+[2022-06-18 07:33:52,223] {logging_mixin.py:115} INFO - Finals win</a PRODUCT
+[2022-06-18 07:33:52,244] {logging_mixin.py:115} INFO - the last two years DATE
+[2022-06-18 07:33:52,244] {logging_mixin.py:115} INFO - COVID-19 PERSON
+[2022-06-18 07:33:52,244] {logging_mixin.py:115} INFO - Sports Business Journal ORG
+[2022-06-18 07:33:52,245] {logging_mixin.py:115} INFO - Finals ORG
+[2022-06-18 07:33:52,245] {logging_mixin.py:115} INFO - 12.4 million CARDINAL
+[2022-06-18 07:33:52,245] {logging_mixin.py:115} INFO - six CARDINAL
+[2022-06-18 07:33:52,245] {logging_mixin.py:115} INFO - the Golden State Warriors FAC
+[2022-06-18 07:33:52,245] {logging_mixin.py:115} INFO - Boston Celtics ORG
+[2022-06-18 07:33:52,245] {logging_mixin.py:115} INFO - 25 percent PERCENT
+[2022-06-18 07:33:52,246] {logging_mixin.py:115} INFO - last year's DATE
+[2022-06-18 07:33:52,246] {logging_mixin.py:115} INFO - Suns ORG
+[2022-06-18 07:33:52,246] {logging_mixin.py:115} INFO - 66 percent PERCENT
+[2022-06-18 07:33:52,246] {logging_mixin.py:115} INFO - 2020 DATE
+[2022-06-18 07:33:52,246] {logging_mixin.py:115} INFO - at least 15 million CARDINAL
+[2022-06-18 07:33:52,247] {logging_mixin.py:115} INFO - Finals ORG
+[2022-06-18 07:33:52,247] {logging_mixin.py:115} INFO - 2013-19 DATE
+[2022-06-18 07:33:52,247] {logging_mixin.py:115} INFO - the two seasons DATE
+[2022-06-18 07:33:52,247] {logging_mixin.py:115} INFO - year DATE
+[2022-06-18 07:33:52,247] {logging_mixin.py:115} INFO - 2007 DATE
+[2022-06-18 07:33:52,267] {logging_mixin.py:115} INFO - SAN FRANCISCO - GPE
+[2022-06-18 07:33:52,267] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,268] {logging_mixin.py:115} INFO - Joe Biden PERSON
+[2022-06-18 07:33:52,268] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,268] {logging_mixin.py:115} INFO - the Golden State Warriors FAC
+[2022-06-18 07:33:52,269] {logging_mixin.py:115} INFO - fourth ORDINAL
+[2022-06-18 07:33:52,269] {logging_mixin.py:115} INFO - NBA ORG
+[2022-06-18 07:33:52,269] {logging_mixin.py:115} INFO - eight years DATE
+[2022-06-18 07:33:52,269] {logging_mixin.py:115} INFO - the White House ORG
+[2022-06-18 07:33:52,269] {logging_mixin.py:115} INFO - the Golden State @Warriors FAC
+[2022-06-18 07:33:52,269] {logging_mixin.py:115} INFO - NBA ORG
+[2022-06-18 07:33:52,270] {logging_mixin.py:115} INFO - Stephen Curry PERSON
+[2022-06-18 07:33:52,270] {logging_mixin.py:115} INFO - Biden PERSON
+[2022-06-18 07:33:52,270] {logging_mixin.py:115} INFO - America GPE
+[2022-06-18 07:33:52,270] {logging_mixin.py:115} INFO - the White House FAC
+[2022-06-18 07:33:52,271] {logging_mixin.py:115} INFO - 4 CARDINAL
+[2022-06-18 07:33:52,271] {logging_mixin.py:115} INFO - the Boston Celtics ORG
+[2022-06-18 07:33:52,271] {logging_mixin.py:115} INFO - Warriors & ORG
+[2022-06-18 07:33:52,271] {logging_mixin.py:115} INFO - 8216;grit&#8217 MONEY
+[2022-06-18 07:33:52,297] {logging_mixin.py:115} INFO - Kim Chiu PERSON
+[2022-06-18 07:33:52,297] {logging_mixin.py:115} INFO - Showtime ORG
+[2022-06-18 07:33:52,297] {logging_mixin.py:115} INFO - Instagram ORG
+[2022-06-18 07:33:52,298] {logging_mixin.py:115} INFO - last Thursday, June 16 DATE
+[2022-06-18 07:33:52,298] {logging_mixin.py:115} INFO - Spike ORG
+[2022-06-18 07:33:52,298] {logging_mixin.py:115} INFO - Serve Philippines GPE
+[2022-06-18 07:33:52,298] {logging_mixin.py:115} INFO - ko mabigat PERSON
+[2022-06-18 07:33:52,298] {logging_mixin.py:115} INFO - Kim Chiu PERSON
+[2022-06-18 07:33:52,299] {logging_mixin.py:115} INFO - 8216;inspiring&#8217 MONEY
+[2022-06-18 07:33:52,320] {logging_mixin.py:115} INFO - PARIS GPE
+[2022-06-18 07:33:52,321] {logging_mixin.py:115} INFO - France GPE
+[2022-06-18 07:33:52,321] {logging_mixin.py:115} INFO - Spain GPE
+[2022-06-18 07:33:52,321] {logging_mixin.py:115} INFO - European NORP
+[2022-06-18 07:33:52,321] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,321] {logging_mixin.py:115} INFO - a sweltering DATE
+[2022-06-18 07:33:52,322] {logging_mixin.py:115} INFO - June weekend DATE
+[2022-06-18 07:33:52,322] {logging_mixin.py:115} INFO - over 40 degrees QUANTITY
+[2022-06-18 07:33:52,322] {logging_mixin.py:115} INFO - France GPE
+[2022-06-18 07:33:52,322] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,322] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,322] {logging_mixin.py:115} INFO - June DATE
+[2022-06-18 07:33:52,323] {logging_mixin.py:115} INFO - Sunday DATE
+[2022-06-18 07:33:52,323] {logging_mixin.py:115} INFO - France GPE
+[2022-06-18 07:33:52,323] {logging_mixin.py:115} INFO - Europe LOC
+[2022-06-18 07:33:52,323] {logging_mixin.py:115} INFO - French NORP
+[2022-06-18 07:33:52,323] {logging_mixin.py:115} INFO - Meteo France ORG
+[2022-06-18 07:33:52,324] {logging_mixin.py:115} INFO - June DATE
+[2022-06-18 07:33:52,324] {logging_mixin.py:115} INFO - june-weekend DATE
+[2022-06-18 07:33:52,324] {logging_mixin.py:115} INFO - June DATE
+[2022-06-18 07:33:52,346] {logging_mixin.py:115} INFO - LUCENA CITY GPE
+[2022-06-18 07:33:52,347] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,347] {logging_mixin.py:115} INFO - eight CARDINAL
+[2022-06-18 07:33:52,347] {logging_mixin.py:115} INFO - Friday, June 17 DATE
+[2022-06-18 07:33:52,347] {logging_mixin.py:115} INFO - Cavite GPE
+[2022-06-18 07:33:52,348] {logging_mixin.py:115} INFO - Rizal GPE
+[2022-06-18 07:33:52,348] {logging_mixin.py:115} INFO - Quezon GPE
+[2022-06-18 07:33:52,348] {logging_mixin.py:115} INFO - Laguna GPE
+[2022-06-18 07:33:52,348] {logging_mixin.py:115} INFO - Batangas GPE
+[2022-06-18 07:33:52,348] {logging_mixin.py:115} INFO - Rizal GPE
+[2022-06-18 07:33:52,349] {logging_mixin.py:115} INFO - Quezon GPE
+[2022-06-18 07:33:52,349] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,349] {logging_mixin.py:115} INFO - Renato Coching PERSON
+[2022-06-18 07:33:52,349] {logging_mixin.py:115} INFO - Raysan Bantilan PERSON
+[2022-06-18 07:33:52,349] {logging_mixin.py:115} INFO - Junnyboy Ocampo PERSON
+[2022-06-18 07:33:52,349] {logging_mixin.py:115} INFO - Roderick Garcia PERSON
+[2022-06-18 07:33:52,350] {logging_mixin.py:115} INFO - 11 p.m. TIME
+[2022-06-18 07:33:52,350] {logging_mixin.py:115} INFO - Barangay PERSON
+[2022-06-18 07:33:52,350] {logging_mixin.py:115} INFO - Queensrow East LOC
+[2022-06-18 07:33:52,350] {logging_mixin.py:115} INFO - Bacoor City GPE
+[2022-06-18 07:33:52,350] {logging_mixin.py:115} INFO - four CARDINAL
+[2022-06-18 07:33:52,350] {logging_mixin.py:115} INFO - eight CARDINAL
+[2022-06-18 07:33:52,351] {logging_mixin.py:115} INFO - 50 grams QUANTITY
+[2022-06-18 07:33:52,351] {logging_mixin.py:115} INFO - Taytay GPE
+[2022-06-18 07:33:52,351] {logging_mixin.py:115} INFO - Rizal GPE
+[2022-06-18 07:33:52,351] {logging_mixin.py:115} INFO - Arnel ORG
+[2022-06-18 07:33:52,351] {logging_mixin.py:115} INFO - Cavite GPE
+[2022-06-18 07:33:52,351] {logging_mixin.py:115} INFO - Rizal GPE
+[2022-06-18 07:33:52,351] {logging_mixin.py:115} INFO - Quezon GPE
+[2022-06-18 07:33:52,370] {logging_mixin.py:115} INFO - SULU - Two ORG
+[2022-06-18 07:33:52,371] {logging_mixin.py:115} INFO - Abu Sayyaf ORG
+[2022-06-18 07:33:52,371] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,371] {logging_mixin.py:115} INFO - Ignatius Patrimonio PERSON
+[2022-06-18 07:33:52,371] {logging_mixin.py:115} INFO - Army ORG
+[2022-06-18 07:33:52,371] {logging_mixin.py:115} INFO - Joint Task Force Sulu ORG
+[2022-06-18 07:33:52,372] {logging_mixin.py:115} INFO - Mujer Yada PERSON
+[2022-06-18 07:33:52,372] {logging_mixin.py:115} INFO - 55 DATE
+[2022-06-18 07:33:52,372] {logging_mixin.py:115} INFO - Ben Tatto PERSON
+[2022-06-18 07:33:52,372] {logging_mixin.py:115} INFO - 41 DATE
+[2022-06-18 07:33:52,372] {logging_mixin.py:115} INFO - Indanan GPE
+[2022-06-18 07:33:52,372] {logging_mixin.py:115} INFO - Sulu PERSON
+[2022-06-18 07:33:52,373] {logging_mixin.py:115} INFO - Patrimonio PERSON
+[2022-06-18 07:33:52,373] {logging_mixin.py:115} INFO - Inquirer GPE
+[2022-06-18 07:33:52,373] {logging_mixin.py:115} INFO - Patrimonio PERSON
+[2022-06-18 07:33:52,373] {logging_mixin.py:115} INFO - Yada GPE
+[2022-06-18 07:33:52,373] {logging_mixin.py:115} INFO - Tatto GPE
+[2022-06-18 07:33:52,374] {logging_mixin.py:115} INFO - Abu Sayyaf PERSON
+[2022-06-18 07:33:52,394] {logging_mixin.py:115} INFO - Two CARDINAL
+[2022-06-18 07:33:52,394] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,394] {logging_mixin.py:115} INFO - night, June 17 DATE
+[2022-06-18 07:33:52,395] {logging_mixin.py:115} INFO - Candelaria GPE
+[2022-06-18 07:33:52,395] {logging_mixin.py:115} INFO - Quezon province GPE
+[2022-06-18 07:33:52,395] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,395] {logging_mixin.py:115} INFO - Dennis Patulot PERSON
+[2022-06-18 07:33:52,395] {logging_mixin.py:115} INFO - 36 DATE
+[2022-06-18 07:33:52,395] {logging_mixin.py:115} INFO - Roel Macasaet ORG
+[2022-06-18 07:33:52,396] {logging_mixin.py:115} INFO - 52 DATE
+[2022-06-18 07:33:52,396] {logging_mixin.py:115} INFO - Barangay PERSON
+[2022-06-18 07:33:52,396] {logging_mixin.py:115} INFO - Masin Norte PERSON
+[2022-06-18 07:33:52,396] {logging_mixin.py:115} INFO - around 10:30 p.m. TIME
+[2022-06-18 07:33:52,396] {logging_mixin.py:115} INFO - Macasaet PERSON
+[2022-06-18 07:33:52,396] {logging_mixin.py:115} INFO - Macasaet PERSON
+[2022-06-18 07:33:52,397] {logging_mixin.py:115} INFO - Macasaet WORK_OF_ART
+[2022-06-18 07:33:52,397] {logging_mixin.py:115} INFO - Macasaet PERSON
+[2022-06-18 07:33:52,397] {logging_mixin.py:115} INFO - Luisa ORG
+[2022-06-18 07:33:52,397] {logging_mixin.py:115} INFO - 52 DATE
+[2022-06-18 07:33:52,397] {logging_mixin.py:115} INFO - 1 CARDINAL
+[2022-06-18 07:33:52,397] {logging_mixin.py:115} INFO - Quezon GPE
+[2022-06-18 07:33:52,414] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,414] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,414] {logging_mixin.py:115} INFO - Ferdinand "Bongbong ORG
+[2022-06-18 07:33:52,415] {logging_mixin.py:115} INFO - Marcos PERSON
+[2022-06-18 07:33:52,415] {logging_mixin.py:115} INFO - Philippine National Police ORG
+[2022-06-18 07:33:52,415] {logging_mixin.py:115} INFO - Ricardo de Leon asNational Intelligence Coordinating Agency PERSON
+[2022-06-18 07:33:52,415] {logging_mixin.py:115} INFO - NICA ORG
+[2022-06-18 07:33:52,415] {logging_mixin.py:115} INFO - Marcos Jr.'s PERSON
+[2022-06-18 07:33:52,415] {logging_mixin.py:115} INFO - Rose Beatrix Cruz - Angeles PERSON
+[2022-06-18 07:33:52,416] {logging_mixin.py:115} INFO - de Leon ORG
+[2022-06-18 07:33:52,416] {logging_mixin.py:115} INFO - National Defense ORG
+[2022-06-18 07:33:52,416] {logging_mixin.py:115} INFO - Interior ORG
+[2022-06-18 07:33:52,416] {logging_mixin.py:115} INFO - Foreign Affairs ORG
+[2022-06-18 07:33:52,416] {logging_mixin.py:115} INFO - the Philippine National Police, Armed Forces of the Philippines ORG
+[2022-06-18 07:33:52,417] {logging_mixin.py:115} INFO - National Bureau of Investigation ORG
+[2022-06-18 07:33:52,417] {logging_mixin.py:115} INFO - chief/">Bongbong Marcos PERSON
+[2022-06-18 07:33:52,417] {logging_mixin.py:115} INFO - NICA ORG
+[2022-06-18 07:33:52,436] {logging_mixin.py:115} INFO - Tom Rodriguez PERSON
+[2022-06-18 07:33:52,436] {logging_mixin.py:115} INFO - Carla Abellana PERSON
+[2022-06-18 07:33:52,436] {logging_mixin.py:115} INFO - the United States GPE
+[2022-06-18 07:33:52,436] {logging_mixin.py:115} INFO - Kapuso ORG
+[2022-06-18 07:33:52,437] {logging_mixin.py:115} INFO - Popoy Caritativo's PERSON
+[2022-06-18 07:33:52,437] {logging_mixin.py:115} INFO - Instagram ORG
+[2022-06-18 07:33:52,437] {logging_mixin.py:115} INFO - yesterday, June 17 DATE
+[2022-06-18 07:33:52,438] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,438] {logging_mixin.py:115} INFO - U.S. GPE
+[2022-06-18 07:33:52,438] {logging_mixin.py:115} INFO - last March 13 DATE
+[2022-06-18 07:33:52,438] {logging_mixin.py:115} INFO - Carla PERSON
+[2022-06-18 07:33:52,438] {logging_mixin.py:115} INFO - Carla PERSON
+[2022-06-18 07:33:52,439] {logging_mixin.py:115} INFO - two CARDINAL
+[2022-06-18 07:33:52,439] {logging_mixin.py:115} INFO - Carla Abellana PERSON
+[2022-06-18 07:33:52,457] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,457] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,458] {logging_mixin.py:115} INFO - Ferdinand "Bongbong ORG
+[2022-06-18 07:33:52,458] {logging_mixin.py:115} INFO - Marcos Jr. PERSON
+[2022-06-18 07:33:52,458] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,458] {logging_mixin.py:115} INFO - Lilia Guillermo PERSON
+[2022-06-18 07:33:52,458] {logging_mixin.py:115} INFO - the Bureau of Internal Revenue ORG
+[2022-06-18 07:33:52,459] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:52,459] {logging_mixin.py:115} INFO - Marcos PERSON
+[2022-06-18 07:33:52,459] {logging_mixin.py:115} INFO - Lilia C. Guillermo PERSON
+[2022-06-18 07:33:52,459] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:52,459] {logging_mixin.py:115} INFO - Marcos Jr. 's PERSON
+[2022-06-18 07:33:52,459] {logging_mixin.py:115} INFO - Rose Beatrix Cruz-Angeles PERSON
+[2022-06-18 07:33:52,460] {logging_mixin.py:115} INFO - the Bangko Sentral ORG
+[2022-06-18 07:33:52,460] {logging_mixin.py:115} INFO - Technology ORG
+[2022-06-18 07:33:52,460] {logging_mixin.py:115} INFO - Digital Innovation Office ORG
+[2022-06-18 07:33:52,460] {logging_mixin.py:115} INFO - Cruz-Angeles PERSON
+[2022-06-18 07:33:52,460] {logging_mixin.py:115} INFO - Guillermo ORG
+[2022-06-18 07:33:52,461] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:52,461] {logging_mixin.py:115} INFO - operations/">Bongbong Marcos PERSON
+[2022-06-18 07:33:52,461] {logging_mixin.py:115} INFO - Guillermo PERSON
+[2022-06-18 07:33:52,483] {logging_mixin.py:115} INFO - SANTA CLARA GPE
+[2022-06-18 07:33:52,484] {logging_mixin.py:115} INFO - Cuba GPE
+[2022-06-18 07:33:52,484] {logging_mixin.py:115} INFO - Havana GPE
+[2022-06-18 07:33:52,484] {logging_mixin.py:115} INFO - American NORP
+[2022-06-18 07:33:52,485] {logging_mixin.py:115} INFO - Cuban NORP
+[2022-06-18 07:33:52,485] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,485] {logging_mixin.py:115} INFO - Cubans NORP
+[2022-06-18 07:33:52,485] {logging_mixin.py:115} INFO - 50 years DATE
+[2022-06-18 07:33:52,485] {logging_mixin.py:115} INFO - Sixto Gonzalez PERSON
+[2022-06-18 07:33:52,485] {logging_mixin.py:115} INFO - 58 DATE
+[2022-06-18 07:33:52,486] {logging_mixin.py:115} INFO - AFP ORG
+[2022-06-18 07:33:52,486] {logging_mixin.py:115} INFO - about 40 kilometers QUANTITY
+[2022-06-18 07:33:52,486] {logging_mixin.py:115} INFO - 25 miles QUANTITY
+[2022-06-18 07:33:52,486] {logging_mixin.py:115} INFO - Gonzalez PERSON
+[2022-06-18 07:33:52,486] {logging_mixin.py:115} INFO - Cubans NORP
+[2022-06-18 07:33:52,506] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,507] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,507] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,507] {logging_mixin.py:115} INFO - the Zamboanga Peninsula GPE
+[2022-06-18 07:33:52,508] {logging_mixin.py:115} INFO - Mindoro GPE
+[2022-06-18 07:33:52,508] {logging_mixin.py:115} INFO - Palawan NORP
+[2022-06-18 07:33:52,508] {logging_mixin.py:115} INFO - ITCZ ORG
+[2022-06-18 07:33:52,508] {logging_mixin.py:115} INFO - the Philippine Atmospheric ORG
+[2022-06-18 07:33:52,508] {logging_mixin.py:115} INFO - Geophysical and Astronomical Services Administration ORG
+[2022-06-18 07:33:52,508] {logging_mixin.py:115} INFO - Pagasa ORG
+[2022-06-18 07:33:52,509] {logging_mixin.py:115} INFO - Ezra Bulquerin PERSON
+[2022-06-18 07:33:52,509] {logging_mixin.py:115} INFO - Metro Manila FAC
+[2022-06-18 07:33:52,509] {logging_mixin.py:115} INFO - Zamboanga GPE
+[2022-06-18 07:33:52,509] {logging_mixin.py:115} INFO - Mindoro GPE
+[2022-06-18 07:33:52,509] {logging_mixin.py:115} INFO - Palawan</a> ORG
+[2022-06-18 07:33:52,528] {logging_mixin.py:115} INFO - Amazon ORG
+[2022-06-18 07:33:52,528] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,528] {logging_mixin.py:115} INFO - British NORP
+[2022-06-18 07:33:52,529] {logging_mixin.py:115} INFO - Dom Phillips PERSON
+[2022-06-18 07:33:52,529] {logging_mixin.py:115} INFO - Brazil GPE
+[2022-06-18 07:33:52,529] {logging_mixin.py:115} INFO - second ORDINAL
+[2022-06-18 07:33:52,529] {logging_mixin.py:115} INFO - Bruno Pereira PERSON
+[2022-06-18 07:33:52,529] {logging_mixin.py:115} INFO - CNN Brasil ORG
+[2022-06-18 07:33:52,530] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,530] {logging_mixin.py:115} INFO - Phillips ORG
+[2022-06-18 07:33:52,530] {logging_mixin.py:115} INFO - June 5 DATE
+[2022-06-18 07:33:52,530] {logging_mixin.py:115} INFO - Javari Valley PERSON
+[2022-06-18 07:33:52,530] {logging_mixin.py:115} INFO - Peru GPE
+[2022-06-18 07:33:52,530] {logging_mixin.py:115} INFO - Colombia GPE
+[2022-06-18 07:33:52,531] {logging_mixin.py:115} INFO - Earlier this week DATE
+[2022-06-18 07:33:52,531] {logging_mixin.py:115} INFO - Amazon ORG
+[2022-06-18 07:33:52,531] {logging_mixin.py:115} INFO - British NORP
+[2022-06-18 07:33:52,551] {logging_mixin.py:115} INFO - Switzerland GPE
+[2022-06-18 07:33:52,552] {logging_mixin.py:115} INFO - The World Trade Organization ORG
+[2022-06-18 07:33:52,552] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,552] {logging_mixin.py:115} INFO - COVID-19 PERSON
+[2022-06-18 07:33:52,552] {logging_mixin.py:115} INFO - two years DATE
+[2022-06-18 07:33:52,552] {logging_mixin.py:115} INFO - 164 CARDINAL
+[2022-06-18 07:33:52,553] {logging_mixin.py:115} INFO - WTO ORG
+[2022-06-18 07:33:52,553] {logging_mixin.py:115} INFO - late-night TIME
+[2022-06-18 07:33:52,553] {logging_mixin.py:115} INFO - five years DATE
+[2022-06-18 07:33:52,553] {logging_mixin.py:115} INFO - October 2020 DATE
+[2022-06-18 07:33:52,553] {logging_mixin.py:115} INFO - South Africa GPE
+[2022-06-18 07:33:52,553] {logging_mixin.py:115} INFO - India GPE
+[2022-06-18 07:33:52,554] {logging_mixin.py:115} INFO - late&#8217;?</a ORG
+[2022-06-18 07:33:52,572] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,573] {logging_mixin.py:115} INFO - Oracle ORG
+[2022-06-18 07:33:52,573] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,573] {logging_mixin.py:115} INFO - ByteDance ORG
+[2022-06-18 07:33:52,574] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:52,574] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:52,574] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,574] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,574] {logging_mixin.py:115} INFO - Buzzfeed ORG
+[2022-06-18 07:33:52,575] {logging_mixin.py:115} INFO - TikTok ORG
+[2022-06-18 07:33:52,575] {logging_mixin.py:115} INFO - TikTok ORG
+[2022-06-18 07:33:52,575] {logging_mixin.py:115} INFO - AFP ORG
+[2022-06-18 07:33:52,575] {logging_mixin.py:115} INFO - href="https://technology.inquirer.net/116544 ORG
+[2022-06-18 07:33:52,575] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,583] {logging_mixin.py:115} INFO - 0     {'MANILA': 'GPE', 'Philippines': 'GPE', '9th':...
+1     {'LIGAO CITY': 'GPE', 'Philippines': 'GPE', 'A...
+2     {'MANILA': 'GPE', 'Philippines': 'GPE', 'COVID...
+3     {'Boston Celtics': 'ORG', 'Ime Udoka': 'PERSON...
+4     {'SAN FRANCISCO - Golden State's': 'GPE', 'Fri...
+5     {'the last two years': 'DATE', 'COVID-19': 'PE...
+6     {'SAN FRANCISCO -': 'GPE', 'US': 'GPE', 'Joe B...
+7     {'Kim Chiu': 'PERSON', 'Showtime': 'ORG', 'Ins...
+8     {'PARIS': 'GPE', 'France': 'GPE', 'Spain': 'GP...
+9     {'LUCENA CITY': 'GPE', 'Philippines': 'GPE', '...
+10    {'SULU - Two': 'ORG', 'Abu Sayyaf': 'PERSON', ...
+11    {'Two': 'CARDINAL', 'Friday': 'DATE', 'night, ...
+12    {'MANILA': 'GPE', 'Philippines': 'GPE', 'Ferdi...
+13    {'Tom Rodriguez': 'PERSON', 'Carla Abellana': ...
+14    {'MANILA': 'GPE', 'Philippines': 'GPE', 'Ferdi...
+15    {'SANTA CLARA': 'GPE', 'Cuba': 'GPE', 'Havana'...
+16    {'MANILA': 'GPE', 'Philippines': 'GPE', 'Satur...
+17    {'Amazon': 'ORG', 'Friday': 'DATE', 'British':...
+18    {'Switzerland': 'GPE', 'The World Trade Organi...
+19    {'Friday': 'DATE', 'Oracle': 'ORG', 'US': 'GPE...
+Name: NER, dtype: object
+[2022-06-18 07:33:52,603] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,603] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,604] {logging_mixin.py:115} INFO - 9th ORDINAL
+[2022-06-18 07:33:52,604] {logging_mixin.py:115} INFO - Asian NORP
+[2022-06-18 07:33:52,604] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,604] {logging_mixin.py:115} INFO - Aspire Dome FAC
+[2022-06-18 07:33:52,604] {logging_mixin.py:115} INFO - Doha GPE
+[2022-06-18 07:33:52,605] {logging_mixin.py:115} INFO - Qatar GPE
+[2022-06-18 07:33:52,605] {logging_mixin.py:115} INFO - 14.933 CARDINAL
+[2022-06-18 07:33:52,605] {logging_mixin.py:115} INFO - Asian NORP
+[2022-06-18 07:33:52,605] {logging_mixin.py:115} INFO - 22-year-old DATE
+[2022-06-18 07:33:52,605] {logging_mixin.py:115} INFO - South Korea's GPE
+[2022-06-18 07:33:52,605] {logging_mixin.py:115} INFO - Kim Hansol PERSON
+[2022-06-18 07:33:52,606] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:52,606] {logging_mixin.py:115} INFO - Yang Jiaxing PERSON
+[2022-06-18 07:33:52,606] {logging_mixin.py:115} INFO - Korean NORP
+[2022-06-18 07:33:52,606] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,606] {logging_mixin.py:115} INFO - Yulo PERSON
+[2022-06-18 07:33:52,607] {logging_mixin.py:115} INFO - FIG Artistic World Championships ORG
+[2022-06-18 07:33:52,607] {logging_mixin.py:115} INFO - Liverpool GPE
+[2022-06-18 07:33:52,607] {logging_mixin.py:115} INFO - October 29 to November 6 DATE
+[2022-06-18 07:33:52,607] {logging_mixin.py:115} INFO - Filipino NORP
+[2022-06-18 07:33:52,607] {logging_mixin.py:115} INFO - fourth ORDINAL
+[2022-06-18 07:33:52,607] {logging_mixin.py:115} INFO - Asian NORP
+[2022-06-18 07:33:52,623] {logging_mixin.py:115} INFO - LIGAO CITY GPE
+[2022-06-18 07:33:52,624] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,624] {logging_mixin.py:115} INFO - Army ORG
+[2022-06-18 07:33:52,624] {logging_mixin.py:115} INFO - Camp Weene Martillana FAC
+[2022-06-18 07:33:52,624] {logging_mixin.py:115} INFO - Camarines Sur ORG
+[2022-06-18 07:33:52,624] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,625] {logging_mixin.py:115} INFO - morning TIME
+[2022-06-18 07:33:52,625] {logging_mixin.py:115} INFO - June 18 DATE
+[2022-06-18 07:33:52,625] {logging_mixin.py:115} INFO - John Paul Belleza PERSON
+[2022-06-18 07:33:52,625] {logging_mixin.py:115} INFO - Army ORG
+[2022-06-18 07:33:52,625] {logging_mixin.py:115} INFO - 9th Infantry Division ORG
+[2022-06-18 07:33:52,625] {logging_mixin.py:115} INFO - around 1:30 a.m. TIME
+[2022-06-18 07:33:52,626] {logging_mixin.py:115} INFO - Army ORG
+[2022-06-18 07:33:52,626] {logging_mixin.py:115} INFO - the 5th Finance Service Field Office Fin ORG
+[2022-06-18 07:33:52,626] {logging_mixin.py:115} INFO - href="https://newsinfo.inquirer.net/1612566 ORG
+[2022-06-18 07:33:52,626] {logging_mixin.py:115} INFO - Camarines Sur Army ORG
+[2022-06-18 07:33:52,643] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,643] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,643] {logging_mixin.py:115} INFO - COVID-19 GPE
+[2022-06-18 07:33:52,644] {logging_mixin.py:115} INFO - Department of Health ORG
+[2022-06-18 07:33:52,644] {logging_mixin.py:115} INFO - Maria Rosario Vergeire PERSON
+[2022-06-18 07:33:52,644] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,644] {logging_mixin.py:115} INFO - Laging Handa ORG
+[2022-06-18 07:33:52,644] {logging_mixin.py:115} INFO - mga kaso PERSON
+[2022-06-18 07:33:52,645] {logging_mixin.py:115} INFO - po ang pagtaas PERSON
+[2022-06-18 07:33:52,645] {logging_mixin.py:115} INFO - pero kailangan PERSON
+[2022-06-18 07:33:52,645] {logging_mixin.py:115} INFO - tayo ORG
+[2022-06-18 07:33:52,645] {logging_mixin.py:115} INFO - 350 CARDINAL
+[2022-06-18 07:33:52,645] {logging_mixin.py:115} INFO - 8216;not MONEY
+[2022-06-18 07:33:52,645] {logging_mixin.py:115} INFO - surge&#8217;</a ORG
+[2022-06-18 07:33:52,663] {logging_mixin.py:115} INFO - Boston Celtics ORG
+[2022-06-18 07:33:52,664] {logging_mixin.py:115} INFO - Ime Udoka PERSON
+[2022-06-18 07:33:52,664] {logging_mixin.py:115} INFO - NBA Finals ORG
+[2022-06-18 07:33:52,664] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,664] {logging_mixin.py:115} INFO - Celtics ORG
+[2022-06-18 07:33:52,664] {logging_mixin.py:115} INFO - 103 CARDINAL
+[2022-06-18 07:33:52,665] {logging_mixin.py:115} INFO - the Golden State Warriors FAC
+[2022-06-18 07:33:52,665] {logging_mixin.py:115} INFO - seven CARDINAL
+[2022-06-18 07:33:52,665] {logging_mixin.py:115} INFO - 4 CARDINAL
+[2022-06-18 07:33:52,665] {logging_mixin.py:115} INFO - Udoka ORG
+[2022-06-18 07:33:52,665] {logging_mixin.py:115} INFO - href="https://sports.inquirer.net/466898 ORG
+[2022-06-18 07:33:52,665] {logging_mixin.py:115} INFO - NBA Finals ORG
+[2022-06-18 07:33:52,666] {logging_mixin.py:115} INFO - Celtics ORG
+[2022-06-18 07:33:52,683] {logging_mixin.py:115} INFO - SAN FRANCISCO - Golden State's GPE
+[2022-06-18 07:33:52,683] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,683] {logging_mixin.py:115} INFO - fourth ORDINAL
+[2022-06-18 07:33:52,683] {logging_mixin.py:115} INFO - eight seasons DATE
+[2022-06-18 07:33:52,684] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,684] {logging_mixin.py:115} INFO - 4 CARDINAL
+[2022-06-18 07:33:52,684] {logging_mixin.py:115} INFO - the Boston Celtics ORG
+[2022-06-18 07:33:52,684] {logging_mixin.py:115} INFO - the previous two seasons DATE
+[2022-06-18 07:33:52,684] {logging_mixin.py:115} INFO - Stephen Curry PERSON
+[2022-06-18 07:33:52,685] {logging_mixin.py:115} INFO - Klay Thompson PERSON
+[2022-06-18 07:33:52,685] {logging_mixin.py:115} INFO - Draymond Green ORG
+[2022-06-18 07:33:52,685] {logging_mixin.py:115} INFO - Nuggets ORG
+[2022-06-18 07:33:52,685] {logging_mixin.py:115} INFO - Grizzlies ORG
+[2022-06-18 07:33:52,685] {logging_mixin.py:115} INFO - Mavericks PERSON
+[2022-06-18 07:33:52,686] {logging_mixin.py:115} INFO - Celtics ORG
+[2022-06-18 07:33:52,686] {logging_mixin.py:115} INFO - Andrew Wiggins PERSON
+[2022-06-18 07:33:52,686] {logging_mixin.py:115} INFO - Jordan Poole PERSON
+[2022-06-18 07:33:52,686] {logging_mixin.py:115} INFO - next season DATE
+[2022-06-18 07:33:52,686] {logging_mixin.py:115} INFO - Finals win</a PRODUCT
+[2022-06-18 07:33:52,703] {logging_mixin.py:115} INFO - the last two years DATE
+[2022-06-18 07:33:52,703] {logging_mixin.py:115} INFO - COVID-19 PERSON
+[2022-06-18 07:33:52,703] {logging_mixin.py:115} INFO - Sports Business Journal ORG
+[2022-06-18 07:33:52,703] {logging_mixin.py:115} INFO - Finals ORG
+[2022-06-18 07:33:52,704] {logging_mixin.py:115} INFO - 12.4 million CARDINAL
+[2022-06-18 07:33:52,704] {logging_mixin.py:115} INFO - six CARDINAL
+[2022-06-18 07:33:52,704] {logging_mixin.py:115} INFO - the Golden State Warriors FAC
+[2022-06-18 07:33:52,704] {logging_mixin.py:115} INFO - Boston Celtics ORG
+[2022-06-18 07:33:52,704] {logging_mixin.py:115} INFO - 25 percent PERCENT
+[2022-06-18 07:33:52,705] {logging_mixin.py:115} INFO - last year's DATE
+[2022-06-18 07:33:52,705] {logging_mixin.py:115} INFO - Suns ORG
+[2022-06-18 07:33:52,705] {logging_mixin.py:115} INFO - 66 percent PERCENT
+[2022-06-18 07:33:52,705] {logging_mixin.py:115} INFO - 2020 DATE
+[2022-06-18 07:33:52,705] {logging_mixin.py:115} INFO - at least 15 million CARDINAL
+[2022-06-18 07:33:52,706] {logging_mixin.py:115} INFO - Finals ORG
+[2022-06-18 07:33:52,706] {logging_mixin.py:115} INFO - 2013-19 DATE
+[2022-06-18 07:33:52,706] {logging_mixin.py:115} INFO - the two seasons DATE
+[2022-06-18 07:33:52,706] {logging_mixin.py:115} INFO - year DATE
+[2022-06-18 07:33:52,706] {logging_mixin.py:115} INFO - 2007 DATE
+[2022-06-18 07:33:52,721] {logging_mixin.py:115} INFO - SAN FRANCISCO - GPE
+[2022-06-18 07:33:52,721] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,722] {logging_mixin.py:115} INFO - Joe Biden PERSON
+[2022-06-18 07:33:52,722] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,722] {logging_mixin.py:115} INFO - the Golden State Warriors FAC
+[2022-06-18 07:33:52,722] {logging_mixin.py:115} INFO - fourth ORDINAL
+[2022-06-18 07:33:52,722] {logging_mixin.py:115} INFO - NBA ORG
+[2022-06-18 07:33:52,723] {logging_mixin.py:115} INFO - eight years DATE
+[2022-06-18 07:33:52,723] {logging_mixin.py:115} INFO - the White House ORG
+[2022-06-18 07:33:52,723] {logging_mixin.py:115} INFO - the Golden State @Warriors FAC
+[2022-06-18 07:33:52,723] {logging_mixin.py:115} INFO - NBA ORG
+[2022-06-18 07:33:52,723] {logging_mixin.py:115} INFO - Stephen Curry PERSON
+[2022-06-18 07:33:52,723] {logging_mixin.py:115} INFO - Biden PERSON
+[2022-06-18 07:33:52,724] {logging_mixin.py:115} INFO - America GPE
+[2022-06-18 07:33:52,724] {logging_mixin.py:115} INFO - the White House FAC
+[2022-06-18 07:33:52,724] {logging_mixin.py:115} INFO - 4 CARDINAL
+[2022-06-18 07:33:52,724] {logging_mixin.py:115} INFO - the Boston Celtics ORG
+[2022-06-18 07:33:52,724] {logging_mixin.py:115} INFO - Warriors & ORG
+[2022-06-18 07:33:52,725] {logging_mixin.py:115} INFO - 8216;grit&#8217 MONEY
+[2022-06-18 07:33:52,742] {logging_mixin.py:115} INFO - Kim Chiu PERSON
+[2022-06-18 07:33:52,742] {logging_mixin.py:115} INFO - Showtime ORG
+[2022-06-18 07:33:52,742] {logging_mixin.py:115} INFO - Instagram ORG
+[2022-06-18 07:33:52,742] {logging_mixin.py:115} INFO - last Thursday, June 16 DATE
+[2022-06-18 07:33:52,743] {logging_mixin.py:115} INFO - Spike ORG
+[2022-06-18 07:33:52,743] {logging_mixin.py:115} INFO - Serve Philippines GPE
+[2022-06-18 07:33:52,743] {logging_mixin.py:115} INFO - ko mabigat PERSON
+[2022-06-18 07:33:52,743] {logging_mixin.py:115} INFO - Kim Chiu PERSON
+[2022-06-18 07:33:52,743] {logging_mixin.py:115} INFO - 8216;inspiring&#8217 MONEY
+[2022-06-18 07:33:52,758] {logging_mixin.py:115} INFO - PARIS GPE
+[2022-06-18 07:33:52,758] {logging_mixin.py:115} INFO - France GPE
+[2022-06-18 07:33:52,758] {logging_mixin.py:115} INFO - Spain GPE
+[2022-06-18 07:33:52,759] {logging_mixin.py:115} INFO - European NORP
+[2022-06-18 07:33:52,759] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,759] {logging_mixin.py:115} INFO - a sweltering DATE
+[2022-06-18 07:33:52,759] {logging_mixin.py:115} INFO - June weekend DATE
+[2022-06-18 07:33:52,759] {logging_mixin.py:115} INFO - over 40 degrees QUANTITY
+[2022-06-18 07:33:52,760] {logging_mixin.py:115} INFO - France GPE
+[2022-06-18 07:33:52,760] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,760] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,760] {logging_mixin.py:115} INFO - June DATE
+[2022-06-18 07:33:52,760] {logging_mixin.py:115} INFO - Sunday DATE
+[2022-06-18 07:33:52,760] {logging_mixin.py:115} INFO - France GPE
+[2022-06-18 07:33:52,761] {logging_mixin.py:115} INFO - Europe LOC
+[2022-06-18 07:33:52,761] {logging_mixin.py:115} INFO - French NORP
+[2022-06-18 07:33:52,761] {logging_mixin.py:115} INFO - Meteo France ORG
+[2022-06-18 07:33:52,761] {logging_mixin.py:115} INFO - June DATE
+[2022-06-18 07:33:52,761] {logging_mixin.py:115} INFO - june-weekend DATE
+[2022-06-18 07:33:52,762] {logging_mixin.py:115} INFO - June DATE
+[2022-06-18 07:33:52,778] {logging_mixin.py:115} INFO - LUCENA CITY GPE
+[2022-06-18 07:33:52,778] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,779] {logging_mixin.py:115} INFO - eight CARDINAL
+[2022-06-18 07:33:52,779] {logging_mixin.py:115} INFO - Friday, June 17 DATE
+[2022-06-18 07:33:52,779] {logging_mixin.py:115} INFO - Cavite GPE
+[2022-06-18 07:33:52,779] {logging_mixin.py:115} INFO - Rizal GPE
+[2022-06-18 07:33:52,779] {logging_mixin.py:115} INFO - Quezon GPE
+[2022-06-18 07:33:52,779] {logging_mixin.py:115} INFO - Laguna GPE
+[2022-06-18 07:33:52,780] {logging_mixin.py:115} INFO - Batangas GPE
+[2022-06-18 07:33:52,780] {logging_mixin.py:115} INFO - Rizal GPE
+[2022-06-18 07:33:52,780] {logging_mixin.py:115} INFO - Quezon GPE
+[2022-06-18 07:33:52,780] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,780] {logging_mixin.py:115} INFO - Renato Coching PERSON
+[2022-06-18 07:33:52,781] {logging_mixin.py:115} INFO - Raysan Bantilan PERSON
+[2022-06-18 07:33:52,781] {logging_mixin.py:115} INFO - Junnyboy Ocampo PERSON
+[2022-06-18 07:33:52,781] {logging_mixin.py:115} INFO - Roderick Garcia PERSON
+[2022-06-18 07:33:52,781] {logging_mixin.py:115} INFO - 11 p.m. TIME
+[2022-06-18 07:33:52,781] {logging_mixin.py:115} INFO - Barangay PERSON
+[2022-06-18 07:33:52,781] {logging_mixin.py:115} INFO - Queensrow East LOC
+[2022-06-18 07:33:52,782] {logging_mixin.py:115} INFO - Bacoor City GPE
+[2022-06-18 07:33:52,782] {logging_mixin.py:115} INFO - four CARDINAL
+[2022-06-18 07:33:52,782] {logging_mixin.py:115} INFO - eight CARDINAL
+[2022-06-18 07:33:52,782] {logging_mixin.py:115} INFO - 50 grams QUANTITY
+[2022-06-18 07:33:52,782] {logging_mixin.py:115} INFO - Taytay GPE
+[2022-06-18 07:33:52,783] {logging_mixin.py:115} INFO - Rizal GPE
+[2022-06-18 07:33:52,783] {logging_mixin.py:115} INFO - Arnel ORG
+[2022-06-18 07:33:52,783] {logging_mixin.py:115} INFO - Cavite GPE
+[2022-06-18 07:33:52,783] {logging_mixin.py:115} INFO - Rizal GPE
+[2022-06-18 07:33:52,783] {logging_mixin.py:115} INFO - Quezon GPE
+[2022-06-18 07:33:52,799] {logging_mixin.py:115} INFO - SULU - Two ORG
+[2022-06-18 07:33:52,800] {logging_mixin.py:115} INFO - Abu Sayyaf ORG
+[2022-06-18 07:33:52,800] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,800] {logging_mixin.py:115} INFO - Ignatius Patrimonio PERSON
+[2022-06-18 07:33:52,800] {logging_mixin.py:115} INFO - Army ORG
+[2022-06-18 07:33:52,801] {logging_mixin.py:115} INFO - Joint Task Force Sulu ORG
+[2022-06-18 07:33:52,801] {logging_mixin.py:115} INFO - Mujer Yada PERSON
+[2022-06-18 07:33:52,801] {logging_mixin.py:115} INFO - 55 DATE
+[2022-06-18 07:33:52,801] {logging_mixin.py:115} INFO - Ben Tatto PERSON
+[2022-06-18 07:33:52,801] {logging_mixin.py:115} INFO - 41 DATE
+[2022-06-18 07:33:52,802] {logging_mixin.py:115} INFO - Indanan GPE
+[2022-06-18 07:33:52,802] {logging_mixin.py:115} INFO - Sulu PERSON
+[2022-06-18 07:33:52,802] {logging_mixin.py:115} INFO - Patrimonio PERSON
+[2022-06-18 07:33:52,802] {logging_mixin.py:115} INFO - Inquirer GPE
+[2022-06-18 07:33:52,802] {logging_mixin.py:115} INFO - Patrimonio PERSON
+[2022-06-18 07:33:52,802] {logging_mixin.py:115} INFO - Yada GPE
+[2022-06-18 07:33:52,803] {logging_mixin.py:115} INFO - Tatto GPE
+[2022-06-18 07:33:52,803] {logging_mixin.py:115} INFO - Abu Sayyaf PERSON
+[2022-06-18 07:33:52,820] {logging_mixin.py:115} INFO - Two CARDINAL
+[2022-06-18 07:33:52,821] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,821] {logging_mixin.py:115} INFO - night, June 17 DATE
+[2022-06-18 07:33:52,821] {logging_mixin.py:115} INFO - Candelaria GPE
+[2022-06-18 07:33:52,821] {logging_mixin.py:115} INFO - Quezon province GPE
+[2022-06-18 07:33:52,822] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,822] {logging_mixin.py:115} INFO - Dennis Patulot PERSON
+[2022-06-18 07:33:52,822] {logging_mixin.py:115} INFO - 36 DATE
+[2022-06-18 07:33:52,822] {logging_mixin.py:115} INFO - Roel Macasaet ORG
+[2022-06-18 07:33:52,822] {logging_mixin.py:115} INFO - 52 DATE
+[2022-06-18 07:33:52,823] {logging_mixin.py:115} INFO - Barangay PERSON
+[2022-06-18 07:33:52,823] {logging_mixin.py:115} INFO - Masin Norte PERSON
+[2022-06-18 07:33:52,823] {logging_mixin.py:115} INFO - around 10:30 p.m. TIME
+[2022-06-18 07:33:52,823] {logging_mixin.py:115} INFO - Macasaet PERSON
+[2022-06-18 07:33:52,823] {logging_mixin.py:115} INFO - Macasaet PERSON
+[2022-06-18 07:33:52,824] {logging_mixin.py:115} INFO - Macasaet WORK_OF_ART
+[2022-06-18 07:33:52,824] {logging_mixin.py:115} INFO - Macasaet PERSON
+[2022-06-18 07:33:52,824] {logging_mixin.py:115} INFO - Luisa ORG
+[2022-06-18 07:33:52,824] {logging_mixin.py:115} INFO - 52 DATE
+[2022-06-18 07:33:52,824] {logging_mixin.py:115} INFO - 1 CARDINAL
+[2022-06-18 07:33:52,825] {logging_mixin.py:115} INFO - Quezon GPE
+[2022-06-18 07:33:52,840] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,840] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,841] {logging_mixin.py:115} INFO - Ferdinand "Bongbong ORG
+[2022-06-18 07:33:52,841] {logging_mixin.py:115} INFO - Marcos PERSON
+[2022-06-18 07:33:52,841] {logging_mixin.py:115} INFO - Philippine National Police ORG
+[2022-06-18 07:33:52,841] {logging_mixin.py:115} INFO - Ricardo de Leon asNational Intelligence Coordinating Agency PERSON
+[2022-06-18 07:33:52,841] {logging_mixin.py:115} INFO - NICA ORG
+[2022-06-18 07:33:52,842] {logging_mixin.py:115} INFO - Marcos Jr.'s PERSON
+[2022-06-18 07:33:52,842] {logging_mixin.py:115} INFO - Rose Beatrix Cruz - Angeles PERSON
+[2022-06-18 07:33:52,842] {logging_mixin.py:115} INFO - de Leon ORG
+[2022-06-18 07:33:52,842] {logging_mixin.py:115} INFO - National Defense ORG
+[2022-06-18 07:33:52,842] {logging_mixin.py:115} INFO - Interior ORG
+[2022-06-18 07:33:52,842] {logging_mixin.py:115} INFO - Foreign Affairs ORG
+[2022-06-18 07:33:52,843] {logging_mixin.py:115} INFO - the Philippine National Police, Armed Forces of the Philippines ORG
+[2022-06-18 07:33:52,843] {logging_mixin.py:115} INFO - National Bureau of Investigation ORG
+[2022-06-18 07:33:52,843] {logging_mixin.py:115} INFO - chief/">Bongbong Marcos PERSON
+[2022-06-18 07:33:52,843] {logging_mixin.py:115} INFO - NICA ORG
+[2022-06-18 07:33:52,860] {logging_mixin.py:115} INFO - Tom Rodriguez PERSON
+[2022-06-18 07:33:52,860] {logging_mixin.py:115} INFO - Carla Abellana PERSON
+[2022-06-18 07:33:52,860] {logging_mixin.py:115} INFO - the United States GPE
+[2022-06-18 07:33:52,860] {logging_mixin.py:115} INFO - Kapuso ORG
+[2022-06-18 07:33:52,861] {logging_mixin.py:115} INFO - Popoy Caritativo's PERSON
+[2022-06-18 07:33:52,861] {logging_mixin.py:115} INFO - Instagram ORG
+[2022-06-18 07:33:52,861] {logging_mixin.py:115} INFO - yesterday, June 17 DATE
+[2022-06-18 07:33:52,861] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,861] {logging_mixin.py:115} INFO - U.S. GPE
+[2022-06-18 07:33:52,861] {logging_mixin.py:115} INFO - last March 13 DATE
+[2022-06-18 07:33:52,862] {logging_mixin.py:115} INFO - Carla PERSON
+[2022-06-18 07:33:52,862] {logging_mixin.py:115} INFO - Carla PERSON
+[2022-06-18 07:33:52,862] {logging_mixin.py:115} INFO - two CARDINAL
+[2022-06-18 07:33:52,862] {logging_mixin.py:115} INFO - Carla Abellana PERSON
+[2022-06-18 07:33:52,878] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,878] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,879] {logging_mixin.py:115} INFO - Ferdinand "Bongbong ORG
+[2022-06-18 07:33:52,879] {logging_mixin.py:115} INFO - Marcos Jr. PERSON
+[2022-06-18 07:33:52,879] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,879] {logging_mixin.py:115} INFO - Lilia Guillermo PERSON
+[2022-06-18 07:33:52,880] {logging_mixin.py:115} INFO - the Bureau of Internal Revenue ORG
+[2022-06-18 07:33:52,880] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:52,880] {logging_mixin.py:115} INFO - Marcos PERSON
+[2022-06-18 07:33:52,880] {logging_mixin.py:115} INFO - Lilia C. Guillermo PERSON
+[2022-06-18 07:33:52,880] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:52,881] {logging_mixin.py:115} INFO - Marcos Jr. 's PERSON
+[2022-06-18 07:33:52,881] {logging_mixin.py:115} INFO - Rose Beatrix Cruz-Angeles PERSON
+[2022-06-18 07:33:52,881] {logging_mixin.py:115} INFO - the Bangko Sentral ORG
+[2022-06-18 07:33:52,881] {logging_mixin.py:115} INFO - Technology ORG
+[2022-06-18 07:33:52,882] {logging_mixin.py:115} INFO - Digital Innovation Office ORG
+[2022-06-18 07:33:52,882] {logging_mixin.py:115} INFO - Cruz-Angeles PERSON
+[2022-06-18 07:33:52,882] {logging_mixin.py:115} INFO - Guillermo ORG
+[2022-06-18 07:33:52,882] {logging_mixin.py:115} INFO - BIR ORG
+[2022-06-18 07:33:52,882] {logging_mixin.py:115} INFO - operations/">Bongbong Marcos PERSON
+[2022-06-18 07:33:52,882] {logging_mixin.py:115} INFO - Guillermo PERSON
+[2022-06-18 07:33:52,899] {logging_mixin.py:115} INFO - SANTA CLARA GPE
+[2022-06-18 07:33:52,900] {logging_mixin.py:115} INFO - Cuba GPE
+[2022-06-18 07:33:52,900] {logging_mixin.py:115} INFO - Havana GPE
+[2022-06-18 07:33:52,900] {logging_mixin.py:115} INFO - American NORP
+[2022-06-18 07:33:52,900] {logging_mixin.py:115} INFO - Cuban NORP
+[2022-06-18 07:33:52,901] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,901] {logging_mixin.py:115} INFO - Cubans NORP
+[2022-06-18 07:33:52,901] {logging_mixin.py:115} INFO - 50 years DATE
+[2022-06-18 07:33:52,901] {logging_mixin.py:115} INFO - Sixto Gonzalez PERSON
+[2022-06-18 07:33:52,901] {logging_mixin.py:115} INFO - 58 DATE
+[2022-06-18 07:33:52,901] {logging_mixin.py:115} INFO - AFP ORG
+[2022-06-18 07:33:52,902] {logging_mixin.py:115} INFO - about 40 kilometers QUANTITY
+[2022-06-18 07:33:52,902] {logging_mixin.py:115} INFO - 25 miles QUANTITY
+[2022-06-18 07:33:52,902] {logging_mixin.py:115} INFO - Gonzalez PERSON
+[2022-06-18 07:33:52,902] {logging_mixin.py:115} INFO - Cubans NORP
+[2022-06-18 07:33:52,918] {logging_mixin.py:115} INFO - MANILA GPE
+[2022-06-18 07:33:52,918] {logging_mixin.py:115} INFO - Philippines GPE
+[2022-06-18 07:33:52,918] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:52,918] {logging_mixin.py:115} INFO - the Zamboanga Peninsula GPE
+[2022-06-18 07:33:52,919] {logging_mixin.py:115} INFO - Mindoro GPE
+[2022-06-18 07:33:52,919] {logging_mixin.py:115} INFO - Palawan NORP
+[2022-06-18 07:33:52,919] {logging_mixin.py:115} INFO - ITCZ ORG
+[2022-06-18 07:33:52,919] {logging_mixin.py:115} INFO - the Philippine Atmospheric ORG
+[2022-06-18 07:33:52,919] {logging_mixin.py:115} INFO - Geophysical and Astronomical Services Administration ORG
+[2022-06-18 07:33:52,919] {logging_mixin.py:115} INFO - Pagasa ORG
+[2022-06-18 07:33:52,920] {logging_mixin.py:115} INFO - Ezra Bulquerin PERSON
+[2022-06-18 07:33:52,920] {logging_mixin.py:115} INFO - Metro Manila FAC
+[2022-06-18 07:33:52,920] {logging_mixin.py:115} INFO - Zamboanga GPE
+[2022-06-18 07:33:52,920] {logging_mixin.py:115} INFO - Mindoro GPE
+[2022-06-18 07:33:52,920] {logging_mixin.py:115} INFO - Palawan</a> ORG
+[2022-06-18 07:33:52,937] {logging_mixin.py:115} INFO - Amazon ORG
+[2022-06-18 07:33:52,937] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,938] {logging_mixin.py:115} INFO - British NORP
+[2022-06-18 07:33:52,938] {logging_mixin.py:115} INFO - Dom Phillips PERSON
+[2022-06-18 07:33:52,938] {logging_mixin.py:115} INFO - Brazil GPE
+[2022-06-18 07:33:52,938] {logging_mixin.py:115} INFO - second ORDINAL
+[2022-06-18 07:33:52,939] {logging_mixin.py:115} INFO - Bruno Pereira PERSON
+[2022-06-18 07:33:52,939] {logging_mixin.py:115} INFO - CNN Brasil ORG
+[2022-06-18 07:33:52,939] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,939] {logging_mixin.py:115} INFO - Phillips ORG
+[2022-06-18 07:33:52,939] {logging_mixin.py:115} INFO - June 5 DATE
+[2022-06-18 07:33:52,939] {logging_mixin.py:115} INFO - Javari Valley PERSON
+[2022-06-18 07:33:52,940] {logging_mixin.py:115} INFO - Peru GPE
+[2022-06-18 07:33:52,940] {logging_mixin.py:115} INFO - Colombia GPE
+[2022-06-18 07:33:52,940] {logging_mixin.py:115} INFO - Earlier this week DATE
+[2022-06-18 07:33:52,940] {logging_mixin.py:115} INFO - Amazon ORG
+[2022-06-18 07:33:52,940] {logging_mixin.py:115} INFO - British NORP
+[2022-06-18 07:33:52,955] {logging_mixin.py:115} INFO - Switzerland GPE
+[2022-06-18 07:33:52,956] {logging_mixin.py:115} INFO - The World Trade Organization ORG
+[2022-06-18 07:33:52,956] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,956] {logging_mixin.py:115} INFO - COVID-19 PERSON
+[2022-06-18 07:33:52,956] {logging_mixin.py:115} INFO - two years DATE
+[2022-06-18 07:33:52,957] {logging_mixin.py:115} INFO - 164 CARDINAL
+[2022-06-18 07:33:52,957] {logging_mixin.py:115} INFO - WTO ORG
+[2022-06-18 07:33:52,957] {logging_mixin.py:115} INFO - late-night TIME
+[2022-06-18 07:33:52,957] {logging_mixin.py:115} INFO - five years DATE
+[2022-06-18 07:33:52,957] {logging_mixin.py:115} INFO - October 2020 DATE
+[2022-06-18 07:33:52,957] {logging_mixin.py:115} INFO - South Africa GPE
+[2022-06-18 07:33:52,958] {logging_mixin.py:115} INFO - India GPE
+[2022-06-18 07:33:52,958] {logging_mixin.py:115} INFO - late&#8217;?</a ORG
+[2022-06-18 07:33:52,974] {logging_mixin.py:115} INFO - Friday DATE
+[2022-06-18 07:33:52,974] {logging_mixin.py:115} INFO - Oracle ORG
+[2022-06-18 07:33:52,975] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,975] {logging_mixin.py:115} INFO - ByteDance ORG
+[2022-06-18 07:33:52,975] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:52,975] {logging_mixin.py:115} INFO - China GPE
+[2022-06-18 07:33:52,975] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,976] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,976] {logging_mixin.py:115} INFO - Buzzfeed ORG
+[2022-06-18 07:33:52,976] {logging_mixin.py:115} INFO - TikTok ORG
+[2022-06-18 07:33:52,976] {logging_mixin.py:115} INFO - TikTok ORG
+[2022-06-18 07:33:52,976] {logging_mixin.py:115} INFO - AFP ORG
+[2022-06-18 07:33:52,976] {logging_mixin.py:115} INFO - href="https://technology.inquirer.net/116544 ORG
+[2022-06-18 07:33:52,977] {logging_mixin.py:115} INFO - US GPE
+[2022-06-18 07:33:52,984] {logging_mixin.py:115} INFO - 0     {'MANILA': 'GPE', 'Philippines': 'GPE', '9th':...
+1     {'LIGAO CITY': 'GPE', 'Philippines': 'GPE', 'A...
+2     {'MANILA': 'GPE', 'Philippines': 'GPE', 'COVID...
+3     {'Boston Celtics': 'ORG', 'Ime Udoka': 'PERSON...
+4     {'SAN FRANCISCO - Golden State's': 'GPE', 'Fri...
+5     {'the last two years': 'DATE', 'COVID-19': 'PE...
+6     {'SAN FRANCISCO -': 'GPE', 'US': 'GPE', 'Joe B...
+7     {'Kim Chiu': 'PERSON', 'Showtime': 'ORG', 'Ins...
+8     {'PARIS': 'GPE', 'France': 'GPE', 'Spain': 'GP...
+9     {'LUCENA CITY': 'GPE', 'Philippines': 'GPE', '...
+10    {'SULU - Two': 'ORG', 'Abu Sayyaf': 'PERSON', ...
+11    {'Two': 'CARDINAL', 'Friday': 'DATE', 'night, ...
+12    {'MANILA': 'GPE', 'Philippines': 'GPE', 'Ferdi...
+13    {'Tom Rodriguez': 'PERSON', 'Carla Abellana': ...
+14    {'MANILA': 'GPE', 'Philippines': 'GPE', 'Ferdi...
+15    {'SANTA CLARA': 'GPE', 'Cuba': 'GPE', 'Havana'...
+16    {'MANILA': 'GPE', 'Philippines': 'GPE', 'Satur...
+17    {'Amazon': 'ORG', 'Friday': 'DATE', 'British':...
+18    {'Switzerland': 'GPE', 'The World Trade Organi...
+19    {'Friday': 'DATE', 'Oracle': 'ORG', 'US': 'GPE...
+Name: NER, dtype: object
+[2022-06-18 07:33:52,994] {logging_mixin.py:115} INFO - 13-year-old DATE
+[2022-06-18 07:33:52,994] {logging_mixin.py:115} INFO - Pantabangan River LOC
+[2022-06-18 07:33:52,995] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:52,995] {logging_mixin.py:115} INFO - afternoon TIME
+[2022-06-18 07:33:53,001] {logging_mixin.py:115} INFO - Two CARDINAL
+[2022-06-18 07:33:53,001] {logging_mixin.py:115} INFO - three CARDINAL
+[2022-06-18 07:33:53,002] {logging_mixin.py:115} INFO - Bontoc GPE
+[2022-06-18 07:33:53,002] {logging_mixin.py:115} INFO - Mountain Province GPE
+[2022-06-18 07:33:53,002] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:53,002] {logging_mixin.py:115} INFO - night TIME
+[2022-06-18 07:33:53,008] {logging_mixin.py:115} INFO - Amadeo GPE
+[2022-06-18 07:33:53,009] {logging_mixin.py:115} INFO - 6/42 CARDINAL
+[2022-06-18 07:33:53,009] {logging_mixin.py:115} INFO - Regular Lotto PRODUCT
+[2022-06-18 07:33:53,009] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:53,009] {logging_mixin.py:115} INFO - night TIME
+[2022-06-18 07:33:53,010] {logging_mixin.py:115} INFO - the Philippine Charity Sweepstakes Office ORG
+[2022-06-18 07:33:53,016] {logging_mixin.py:115} INFO - Bong Go PERSON
+[2022-06-18 07:33:53,017] {logging_mixin.py:115} INFO - Tarlac City GPE
+[2022-06-18 07:33:53,017] {logging_mixin.py:115} INFO - Wednesday DATE
+[2022-06-18 07:33:53,017] {logging_mixin.py:115} INFO - thousands CARDINAL
+[2022-06-18 07:33:53,017] {logging_mixin.py:115} INFO - COVID ORG
+[2022-06-18 07:33:53,023] {logging_mixin.py:115} INFO - Two CARDINAL
+[2022-06-18 07:33:53,023] {logging_mixin.py:115} INFO - Barangay Bugasan PERSON
+[2022-06-18 07:33:53,023] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:53,029] {logging_mixin.py:115} INFO - Avian influenza ORG
+[2022-06-18 07:33:53,029] {logging_mixin.py:115} INFO - Luzon GPE
+[2022-06-18 07:33:53,030] {logging_mixin.py:115} INFO - Mindanao GPE
+[2022-06-18 07:33:53,036] {logging_mixin.py:115} INFO - nearly P40 million CARDINAL
+[2022-06-18 07:33:53,036] {logging_mixin.py:115} INFO - Cebu City GPE
+[2022-06-18 07:33:53,036] {logging_mixin.py:115} INFO - Kalinga GPE
+[2022-06-18 07:33:53,036] {logging_mixin.py:115} INFO - the past two days DATE
+[2022-06-18 07:33:53,037] {logging_mixin.py:115} INFO - the Philippine National Police ORG
+[2022-06-18 07:33:53,044] {logging_mixin.py:115} INFO - two CARDINAL
+[2022-06-18 07:33:53,045] {logging_mixin.py:115} INFO - the Manila Baywalk Dolomite Beach FAC
+[2022-06-18 07:33:53,045] {logging_mixin.py:115} INFO - 13 CARDINAL
+[2022-06-18 07:33:53,045] {logging_mixin.py:115} INFO - the Supreme Court ORG
+[2022-06-18 07:33:53,045] {logging_mixin.py:115} INFO - Manila Bay PERSON
+[2022-06-18 07:33:53,046] {logging_mixin.py:115} INFO - Department of Environment and Natural Resources ORG
+[2022-06-18 07:33:53,046] {logging_mixin.py:115} INFO - yesterday DATE
+[2022-06-18 07:33:53,052] {logging_mixin.py:115} INFO - Two days DATE
+[2022-06-18 07:33:53,053] {logging_mixin.py:115} INFO - Camp Crame FAC
+[2022-06-18 07:33:53,053] {logging_mixin.py:115} INFO - Jose Antonio Sanvicente PERSON
+[2022-06-18 07:33:53,053] {logging_mixin.py:115} INFO - Mandaluyong GPE
+[2022-06-18 07:33:53,053] {logging_mixin.py:115} INFO - yesterday DATE
+[2022-06-18 07:33:53,058] {logging_mixin.py:115} INFO - Metropolitan Theater ORG
+[2022-06-18 07:33:53,058] {logging_mixin.py:115} INFO - yesterday DATE
+[2022-06-18 07:33:53,063] {logging_mixin.py:115} INFO - 0    {'13-year-old': 'DATE', 'Pantabangan River': '...
+1    {'Two': 'CARDINAL', 'three': 'CARDINAL', 'Bont...
+2    {'Amadeo': 'GPE', '6/42': 'CARDINAL', 'Regular...
+3    {'Bong Go': 'PERSON', 'Tarlac City': 'GPE', 'W...
+4    {'Two': 'CARDINAL', 'Barangay Bugasan': 'PERSO...
+5    {'Avian influenza': 'ORG', 'Luzon': 'GPE', 'Mi...
+6    {'nearly P40 million': 'CARDINAL', 'Cebu City'...
+7    {'two': 'CARDINAL', 'the Manila Baywalk Dolomi...
+8    {'Two days': 'DATE', 'Camp Crame': 'FAC', 'Jos...
+9    {'Metropolitan Theater': 'ORG', 'yesterday': '...
+Name: NER, dtype: object
+[2022-06-18 07:33:53,074] {logging_mixin.py:115} INFO - Army ORG
+[2022-06-18 07:33:53,074] {logging_mixin.py:115} INFO - 6th Infantry Division ORG
+[2022-06-18 07:33:53,074] {logging_mixin.py:115} INFO - Saturday DATE
+[2022-06-18 07:33:53,074] {logging_mixin.py:115} INFO - 378 CARDINAL
+[2022-06-18 07:33:53,075] {logging_mixin.py:115} INFO - the past four years DATE
+[2022-06-18 07:33:53,080] {logging_mixin.py:115} INFO - 13-year-old DATE
+[2022-06-18 07:33:53,080] {logging_mixin.py:115} INFO - Pantabangan River LOC
+[2022-06-18 07:33:53,080] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:53,080] {logging_mixin.py:115} INFO - afternoon TIME
+[2022-06-18 07:33:53,085] {logging_mixin.py:115} INFO - Two CARDINAL
+[2022-06-18 07:33:53,085] {logging_mixin.py:115} INFO - three CARDINAL
+[2022-06-18 07:33:53,086] {logging_mixin.py:115} INFO - Bontoc GPE
+[2022-06-18 07:33:53,086] {logging_mixin.py:115} INFO - Mountain Province GPE
+[2022-06-18 07:33:53,086] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:53,086] {logging_mixin.py:115} INFO - night TIME
+[2022-06-18 07:33:53,092] {logging_mixin.py:115} INFO - Amadeo GPE
+[2022-06-18 07:33:53,093] {logging_mixin.py:115} INFO - 6/42 CARDINAL
+[2022-06-18 07:33:53,093] {logging_mixin.py:115} INFO - Regular Lotto PRODUCT
+[2022-06-18 07:33:53,093] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:53,093] {logging_mixin.py:115} INFO - night TIME
+[2022-06-18 07:33:53,093] {logging_mixin.py:115} INFO - the Philippine Charity Sweepstakes Office ORG
+[2022-06-18 07:33:53,100] {logging_mixin.py:115} INFO - Bong Go PERSON
+[2022-06-18 07:33:53,101] {logging_mixin.py:115} INFO - Tarlac City GPE
+[2022-06-18 07:33:53,101] {logging_mixin.py:115} INFO - Wednesday DATE
+[2022-06-18 07:33:53,101] {logging_mixin.py:115} INFO - thousands CARDINAL
+[2022-06-18 07:33:53,102] {logging_mixin.py:115} INFO - COVID ORG
+[2022-06-18 07:33:53,107] {logging_mixin.py:115} INFO - Two CARDINAL
+[2022-06-18 07:33:53,108] {logging_mixin.py:115} INFO - Barangay Bugasan PERSON
+[2022-06-18 07:33:53,108] {logging_mixin.py:115} INFO - Thursday DATE
+[2022-06-18 07:33:53,113] {logging_mixin.py:115} INFO - Avian influenza ORG
+[2022-06-18 07:33:53,113] {logging_mixin.py:115} INFO - Luzon GPE
+[2022-06-18 07:33:53,113] {logging_mixin.py:115} INFO - Mindanao GPE
+[2022-06-18 07:33:53,119] {logging_mixin.py:115} INFO - nearly P40 million CARDINAL
+[2022-06-18 07:33:53,120] {logging_mixin.py:115} INFO - Cebu City GPE
+[2022-06-18 07:33:53,120] {logging_mixin.py:115} INFO - Kalinga GPE
+[2022-06-18 07:33:53,120] {logging_mixin.py:115} INFO - the past two days DATE
+[2022-06-18 07:33:53,120] {logging_mixin.py:115} INFO - the Philippine National Police ORG
+[2022-06-18 07:33:53,127] {logging_mixin.py:115} INFO - two CARDINAL
+[2022-06-18 07:33:53,128] {logging_mixin.py:115} INFO - the Manila Baywalk Dolomite Beach FAC
+[2022-06-18 07:33:53,128] {logging_mixin.py:115} INFO - 13 CARDINAL
+[2022-06-18 07:33:53,128] {logging_mixin.py:115} INFO - the Supreme Court ORG
+[2022-06-18 07:33:53,128] {logging_mixin.py:115} INFO - Manila Bay PERSON
+[2022-06-18 07:33:53,128] {logging_mixin.py:115} INFO - Department of Environment and Natural Resources ORG
+[2022-06-18 07:33:53,129] {logging_mixin.py:115} INFO - yesterday DATE
+[2022-06-18 07:33:53,134] {logging_mixin.py:115} INFO - Two days DATE
+[2022-06-18 07:33:53,134] {logging_mixin.py:115} INFO - Camp Crame FAC
+[2022-06-18 07:33:53,135] {logging_mixin.py:115} INFO - Jose Antonio Sanvicente PERSON
+[2022-06-18 07:33:53,135] {logging_mixin.py:115} INFO - Mandaluyong GPE
+[2022-06-18 07:33:53,135] {logging_mixin.py:115} INFO - yesterday DATE
+[2022-06-18 07:33:53,140] {logging_mixin.py:115} INFO - 0    {'Army': 'ORG', '6th Infantry Division': 'ORG'...
+1    {'13-year-old': 'DATE', 'Pantabangan River': '...
+2    {'Two': 'CARDINAL', 'three': 'CARDINAL', 'Bont...
+3    {'Amadeo': 'GPE', '6/42': 'CARDINAL', 'Regular...
+4    {'Bong Go': 'PERSON', 'Tarlac City': 'GPE', 'W...
+5    {'Two': 'CARDINAL', 'Barangay Bugasan': 'PERSO...
+6    {'Avian influenza': 'ORG', 'Luzon': 'GPE', 'Mi...
+7    {'nearly P40 million': 'CARDINAL', 'Cebu City'...
+8    {'two': 'CARDINAL', 'the Manila Baywalk Dolomi...
+9    {'Two days': 'DATE', 'Camp Crame': 'FAC', 'Jos...
+Name: NER, dtype: object
+[2022-06-18 07:33:53,141] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-18 07:33:53,151] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=coffee_lake_demo-v2, task_id=spacy_ner, execution_date=20220618T073331, start_date=20220618T073350, end_date=20220618T073353
+[2022-06-18 07:33:53,185] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 07:33:53,218] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
