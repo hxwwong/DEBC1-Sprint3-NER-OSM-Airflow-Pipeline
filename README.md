@@ -1,4 +1,4 @@
-# NER Data Pipeline with Apache Airflow & DAGs 
+# NER/OSM Data Pipeline with Apache Airflow & DAGs 
 The data pipeline is catered to providing accesible, transformed, and normalized data for NLP/NER and Geospatial modelling data.
 
 # Data Engineering Cohort 1
